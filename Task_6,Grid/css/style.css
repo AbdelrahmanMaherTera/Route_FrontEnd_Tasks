@@ -1,0 +1,578 @@
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #9fa3a7;
+}
+
+h1 , h2 , h3 {
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grid container */
+
+/* div.grid-container {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) 25%;
+    grid-template-rows: repeat(3,1fr) 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item1 item1 item2 item2"
+      "item3 item4 item4 item5"
+      "item6 item7 item7 item5"
+      "item8 item9 item10 item10";
+} */
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "item2 item2 item2 item2"
+      "item1 item1 item1 item1"
+      "item3 item3 item6 item6"
+      "item4 item4 item4 item4"
+      "item8 item8 item5 item5"
+      "item7 item7 item5 item5"
+      "item9 item9 item9 item9"
+      "item10 item10 item10 item10";
+}
+
+/* -------------------------Grid container------------------------- */
+
+/* Grid items */
+  
+div.grid-container div.item1 {
+    grid-area: item1;
+}
+
+div.grid-container div.item2 {
+    grid-area: item2;
+}
+
+div.grid-container div.item3 {
+    grid-area: item3;
+}
+
+div.grid-container div.item4 {
+    grid-area: item4;
+}
+
+div.grid-container div.item5 {
+    grid-area: item5;
+}
+
+div.grid-container div.item6 {
+    grid-area: item6;
+}
+
+div.grid-container div.item7 {
+    grid-area: item7;
+}
+
+div.grid-container div.item8 {
+    grid-area: item8;
+}
+
+div.grid-container div.item9 {
+    grid-area: item9;
+}
+
+div.grid-container div.item10 {
+    grid-area: item10
+}
+
+/* -------------------------Grid items------------------------- */
+
+/* item 1 */
+
+div.grid-container div.item1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.grid-container div.item1 div.item1-content {
+    width: 32%;
+}
+
+div.grid-container div.item1 div.item1-content h3 {
+    margin-block: 10px 20px;
+}
+
+div.grid-container div.item1 div.item1-img {
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+div.grid-container div.item1 div.item1-img img {
+    width: 250px;
+    display: block;
+}
+
+/* -------------------------item 1------------------------- */
+
+/* item 2 */
+
+div.grid-container div.item2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+    overflow: hidden;
+    /* padding-block: 0; */
+    padding-block: 50px;
+}
+
+div.grid-container div.item2 h3 {
+    margin-block: 20px 10px;
+    /* font-size: 48px;
+    line-height: 60px; */
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+    max-width: 550px;
+}
+
+div.grid-container div.item2 a {
+    text-decoration: underline;
+    color: #27b9c2;
+}
+
+/* -------------------------item 2------------------------- */
+
+/* item 3 */
+
+div.grid-container div.item3 {
+    background-color: #f05638;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: 60px;
+}
+
+div.grid-container div.item3 div.item3-img img {
+    /* width: 319px; */
+    width: 100%;
+}
+
+div.grid-container div.item3 h3 {
+    width: 230px;
+    color: #fffbfb;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-block: 10px 20px;
+}
+
+div.grid-container div.item3 a {
+    color: #ffc80a;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* -------------------------item 3------------------------- */
+
+/* item 4 */
+
+div.grid-container div.item4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 68px 4% 0;
+}
+
+div.grid-container div.item4 div.col-1 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.grid-container div.item4 div.col-1 h3 {
+    max-width: 180px;
+    margin-block: 10px 53px;
+}
+
+div.grid-container div.item4 div.col-1 img {
+    width: 450px;
+    display: block;
+    translate: -63% 0;
+    justify-self: flex-end;
+}
+
+div.grid-container div.item4 div.col-2 {
+    width: 40%;
+}
+
+div.grid-container div.item4 div.col-2 p {
+    margin-bottom: 20px;
+}
+
+div.grid-container div.item4 div.col-2 a {
+    color: #27b9c2;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+/* -------------------------item 4------------------------- */
+
+/* item 5 */
+
+div.grid-container div.item5 {
+    padding-block: 70px 70px;
+    background-color: #8f76bc;
+    overflow: hidden;
+}
+
+div.grid-container div.item5 div.item5-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div.grid-container div.item5 div.item5-container p ,
+div.grid-container div.item5 div.item5-container h2{
+    color: #fff;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8166b0;
+    border-radius: 50%;
+    width: 373px;
+    height: 373px;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-img p.p1 {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    background-color: #8b72b6;
+    padding: 4px 20px 1px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-img p i {
+    font-size: 16px;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-img img {
+    width: 239px;
+    display: block;
+    position: relative;
+    left: -8px;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 5%;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-block: 20px 10px;
+
+}
+
+div.grid-container div.item5 div.item5-container div.item5-content p {
+    max-width: 275px;
+    margin-bottom: 30px;
+}
+
+div.grid-container div.item5 div.item5-container div.item5-content a {
+    padding: 14px 28px;
+    background-color: #ffc80a;
+    color: #000;
+    width: fit-content;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* -------------------------item 5------------------------- */
+
+/* item 6 */
+
+div.grid-container div.item6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.grid-container div.item6 div.item6-img img {
+    width: 248px;
+    display: block;
+    position: relative;
+    left: -25px;
+}
+
+div.grid-container div.item6 h3 {
+    max-width: 54%;
+    margin-block: 10px 40px;
+    text-transform: capitalize;
+}
+
+div.grid-container div.item6 a {
+    color: #27b9c2;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* -------------------------item 6------------------------- */
+
+/* item 7 */
+
+div.grid-container div.item7 {
+    background-color: #93b6b7;
+    background-image: url("../images/bg-item7.png");
+    background-size: 80%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.grid-container div.item7 p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #fff;
+    background-color: #fa684f;
+    padding-inline: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.grid-container div.item7 h3 {
+    max-width: 280px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: auto;
+    padding-block: 30px;
+    
+}
+
+div.grid-container div.item7 img {
+    /* width: 684px; */
+    width: 90%;
+    align-self: flex-end;
+    translate: -17% 0;
+}
+
+/* -------------------------item 7------------------------- */
+
+/* item 8 */
+
+div.grid-container div.item8 {
+    display: flex;
+    justify-content: center;
+    background-color: #38d5f4;
+    align-items: center;
+}
+
+div.grid-container div.item8 div.container {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    padding-inline: 34px;
+    background-color: #35cfed;
+}
+
+div.grid-container div.item8 div.container img {
+    width: 43.5px;
+}
+
+div.grid-container div.item8 div.container h3 {
+    margin-block: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* -------------------------item 8------------------------- */
+
+/* item 9 */
+
+div.grid-container div.item9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 30px;
+    /* padding-block: 0; */
+}
+
+div.grid-container div.item9 p {
+    background-color: #7bc424;
+    color: #fff;
+    padding-inline: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.grid-container div.item9 h3 {
+    width: 70%;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+/* -------------------------item 9------------------------- */
+
+/* item 10 */
+
+div.grid-container div.item10 {
+    background-color: #2c2c2c;
+    padding-inline: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.grid-container div.item10 img {
+    width: 270px;
+    display: block;
+    position: relative;
+    left: -15%;
+    top: -8%;
+}
+
+div.grid-container div.item10 h3 {
+    color: #fff;
+    width: 34%;
+    margin-block: 10px 20px;
+}
+
+/* -------------------------item 10------------------------- */
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    div.grid-container {
+        grid-template-columns: repeat(3,1fr) 25%;
+        grid-template-rows: repeat(3,auto) 0.2fr;
+        grid-template-areas:
+        "item1 item1 item2 item2"
+        "item3 item4 item4 item5"
+        "item6 item7 item7 item5"
+        "item8 item9 item10 item10";
+    }
+
+    div.grid-container div.item2 {
+        padding-block: 0;
+    }
+    
+    div.grid-container div.item2 h3 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    div.grid-container div.item3 div.item3-img img {
+        width: 319px;
+    }
+
+    div.grid-container div.item9 {
+        padding-block: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

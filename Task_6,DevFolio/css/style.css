@@ -1,0 +1,783 @@
+html {
+    scroll-padding-top: 58px;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+/* navbar */
+
+nav {
+    padding-block: 12px !important;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav a.logo {
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #4e4e4e !important;
+    font-weight: 600 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul.links li {
+    padding: 10px 0 10px 30px;
+}
+
+nav ul.links li a {
+    position: relative;
+    padding: 0 !important;
+    letter-spacing: 0.4px;
+}
+
+nav ul.links li a i {
+    font-size: 12px;
+}
+
+nav ul.links li a:hover ,
+nav ul.links li a:focus ,
+nav ul.links li a.active {
+    color: #0078ff !important;
+}
+
+nav .navbar-toggler i{
+    color: #fff !important;
+    font-size: 25px;
+}
+nav .navbar-toggler ,
+nav .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* ----------------end navbar---------------- */
+
+/* home */
+
+div.section-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 50% , rgba(0, 0, 0, 0.5) 50%) , url("../images/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: 600;
+}
+
+div.section-home h1 {
+    font-size: 3rem;
+    font-weight: inherit;
+}
+
+div.section-home p {
+    font-size: 1.5rem;
+}
+
+div.section-home p::after {
+    content: "Developer|";
+    animation: typing 6s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    2.5% {
+        content: "D|";
+    }
+    5% {
+        content: "De|";
+    }
+    7.5% {
+        content: "Dev|";
+    }
+    10% {
+        content: "Deve|";
+    }
+    12.5% {
+        content: "Devel|";
+    }
+    15% {
+        content: "Develo|";
+    }
+    17.5% {
+        content: "Develop|";
+    }
+    20% {
+        content: "Develope|";
+    }
+    27.5% {
+        content: "Developer|";
+    }
+    30% {
+        content: "Develope|";
+    }
+    32.5% {
+        content: "Develop|";
+    }
+    35% {
+        content: "Develo|";
+    }
+    37.5% {
+        content: "Devel|";
+    }
+    40% {
+        content: "Deve|";
+    }
+    42.5% {
+        content: "Dev|";
+    }
+    45% {
+        content: "De|";
+    }
+    47.5% {
+        content: "D|";
+    }
+    50% {
+        content: "|";
+    }
+    52.5% {
+        content: "D|";
+    }
+    55% {
+        content: "De|";
+    }
+    57.5% {
+        content: "Des|";
+    }
+    60% {
+        content: "Desi|";
+    }
+    62.5% {
+        content: "Desig|";
+    }
+    65% {
+        content: "Design|";
+    }
+    67.5% {
+        content: "Designe|";
+    }
+    75% {
+        content: "Designer|";
+    }
+    77.5% {
+        content: "Designe|";
+    }
+    80% {
+        content: "Design|";
+    }
+    82.5% {
+        content: "Desig|";
+    }
+    85% {
+        content: "Desi|";
+    }
+    87.5% {
+        content: "Des|";
+    }
+    90% {
+        content: "De|";
+    }
+    95% {
+        content: "D|";
+    }
+    100% {
+        content: "|";
+    }
+}
+
+/* ----------------end home---------------- */
+
+/* about */
+
+div.about {
+    padding-top: 64px;
+}
+
+div.about div.about-container {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 4rem 1.25rem;
+}
+
+div.about div.about-col-1 div.about-img img {
+    margin: 0 0 32px 10px;
+}
+
+.title-s {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+
+div.about div.about-col-1 div.skill > span {
+    text-transform: uppercase;
+}
+
+div.about div.about-col-1 div.skill div.progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+}
+
+div.about div.about-col-2 h5.header {
+    color: #1e1e1e;
+    font-size: 2rem;
+    position: relative;
+}
+
+div.about div.about-col-2 h5.header::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+div.about div.about-col-2 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* ----------------end about---------------- */
+
+/* services */
+
+div.services {
+    padding-top: 64px;
+}
+
+div.services div.header {
+    margin-bottom: 64px;
+}
+
+div.services div.header h3.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+
+div.services div.header div.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+div.services div.services-cards div.my-card {
+    margin-bottom: 3rem;
+}
+
+div.services div.services-cards div.my-card div.my-card-container {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+div.services div.services-cards div.my-card div.my-card-container div.my-card-icon {
+    margin-bottom: 1rem;
+}
+
+div.services div.services-cards div.my-card div.my-card-container div.my-card-icon div.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    color: #1e1e1e;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 500ms ease;
+}
+
+div.services div.services-cards div.my-card div.my-card-container:hover div.my-card-icon div.icon-circle {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+div.services div.services-cards div.my-card div.my-card-container div.my-card-content h2 {
+    padding: 0.4rem 0;
+    color: #1e1e1e;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* ----------------end services---------------- */
+
+/* counter */
+
+div.counter {
+    padding-block: 8rem;
+    background-image: linear-gradient( rgba(0, 119, 255, 0.7) 50% , rgba(0, 119, 255, 0.7) 50%) , url("../images/counters-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+div.counter div.group-items div.item {
+    margin-bottom: 1.8rem;
+}
+
+div.counter div.group-items div.item div.counter-icon {
+    margin-bottom: 1rem;
+}
+
+div.counter div.group-items div.item div.counter-icon div.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+div.counter div.group-items div.item div.counter-content p {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* ----------------end counter---------------- */
+
+/* work */
+
+div.work {
+    padding-top: 64px;
+}
+
+div.work div.header {
+    margin-bottom: 64px;
+}
+
+div.work div.header h3.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+
+div.work div.header div.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+div.work div.work-cards div.my-card {
+    margin-bottom: 3rem;
+}
+
+div.work div.work-cards div.my-card div.my-card-container {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-img {
+    overflow: hidden;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-img img {
+    transition: all 1s;
+}
+
+div.work div.work-cards div.my-card div.my-card-container:hover div.my-card-img img {
+    scale: 1.3;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content {
+    padding: 2rem 3% 1rem 4%;
+    background-color: #fff;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content h2 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content p span {
+    color: #0078ff;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content div.icon a {
+    font-size: 2.5rem;
+    color: #0078ff;
+    text-decoration: none;
+}
+
+div.work div.work-cards div.my-card div.my-card-container div.my-card-content div.icon a:hover {
+    color: #0078ff;
+    text-decoration: none;
+}
+
+/* ----------------end work---------------- */
+
+/* slider */
+
+div.slider {
+    padding-block: 8rem;
+    background-image: linear-gradient( rgba(0, 119, 255, 0.7) 50% , rgba(0, 119, 255, 0.7) 50%) , url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+div.slider div.carousel-indicators {
+    bottom: -100px;
+}
+
+div.slider .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+div.slider div.slider-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.slider div.slider-img p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem
+}
+
+div.slider div.slider-content p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ----------------end slider---------------- */
+
+/* blog */
+
+div.blog {
+    padding-top: 64px;
+}
+
+div.blog div.header {
+    margin-bottom: 64px;
+}
+
+div.blog div.header h3.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+
+div.blog div.header div.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+div.blog div.blog-cards div.my-card {
+    margin-bottom: 3rem;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0 0 0.375rem 0.375rem;
+    overflow: hidden;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-content {
+    padding: 1rem;
+    background-color: #fff;
+    position: relative;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-content div.my-card-category {
+    background-color: #0078ff;
+    color: #fff;
+    padding: 7.5px 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    translate: -50% 0;
+    display: inline-block;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-content div.my-card-category h6 {
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-content h3 a {
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    color: #1e1e1e;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container a:hover {
+    color: #0078ff !important;
+    text-decoration: none;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+    padding: 0.5rem 1rem;
+}
+
+div.blog div.blog-cards div.my-card div.my-card-container div.my-card-footer div.post-author img {
+    width: 32px;
+}
+
+/* ----------------end blog---------------- */
+
+/* contact */
+
+div.contact {
+    margin-top: 64px;
+    padding-top: 128px;
+    background-image: linear-gradient( rgba(0, 119, 255, 0.7) 50% , rgba(0, 119, 255, 0.7) 50%) , url("../images/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.contact div.contact-container {
+    background-color: #fff;
+    padding: 3rem 1.25rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.contact div.contact-container h5.header {
+    color: #1e1e1e;
+    font-size: 2rem;
+    position: relative;
+}
+
+div.contact div.contact-container h5.header::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+div.contact div.contact-container div.contact-col-1 form > input ,
+div.contact div.contact-container div.contact-col-1 form > textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 16px;
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+    transition: all 0.15s ease-in-out;
+}
+
+div.contact div.contact-container div.contact-col-1 form > input:focus ,
+div.contact div.contact-container div.contact-col-1 form > textarea:focus {
+    outline: none;
+    border-color: #0078ff;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+div.contact div.contact-container div.contact-col-1 form textarea {
+    padding-block: 12px;
+    margin-bottom: 32px;
+    min-height: 140px;
+    max-height: 250px;
+    resize: vertical;
+}
+
+div.contact div.contact-container div.contact-col-1 form button {
+    background-color: #0078ff;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+div.contact div.contact-container div.contact-col-1 form button:hover {
+    background-color: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+
+div.contact div.contact-container div.contact-col-2 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+div.contact div.contact-container div.contact-col-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+div.contact div.contact-container div.contact-col-2 ul.info li {
+    margin-bottom: 0.5rem;
+}
+
+div.contact div.contact-container div.contact-col-2 ul.info li i {
+    color: #0078ff;
+    margin-right: 15px;
+}
+
+div.contact div.contact-container div.contact-col-2 div.social {
+    padding-block: 1rem;
+}
+
+div.contact div.contact-container div.contact-col-2 div.social ul li {
+    margin-right: 15px;
+}
+
+div.contact div.contact-container div.contact-col-2 div.social ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e1e1e;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 0.5s ease;
+}
+
+div.contact div.contact-container div.contact-col-2 div.social ul li a:hover {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+}
+
+/* ----------------end contact---------------- */
+
+/* footer */
+
+footer {
+    padding-block: 25px;
+    color: #fff;
+    background: #0062d3;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ----------------end footer---------------- */
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    div.section-home h1 {
+        font-size: 4.5rem;
+    }
+
+    div.section-home p {
+        font-size: 2.5rem;
+    }
+
+    div.about div.about-container {
+        padding-inline: 3rem;
+    }
+
+    div.slider div.slider-content p {
+        padding-inline: 0.5rem;
+    }
+
+    div.contact div.contact-container {
+        padding-inline: 3rem;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    html {
+        scroll-padding-top: 67px;
+    }
+
+    nav a.lg-color {
+        color: #fff !important;
+    }
+
+    nav ul.links li a.lg-color:hover ,
+    nav ul.links li a.lg-color:focus ,
+    nav ul.links li a.lg-color.active {
+        color: #fff !important;
+    }
+    
+    nav ul.links li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+    }
+
+    nav ul.links li a:hover::before ,
+    nav ul.links li a:focus::before ,
+    nav ul.links li a.active::before  {
+        width: 80%;
+    }
+
+    div.slider div.slider-content p {
+        padding-inline: 8rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    div.slider div.slider-content p {
+        padding-inline: 13rem;
+    }
+}

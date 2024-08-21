@@ -1,0 +1,994 @@
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* section home */
+
+div.home {
+    height: 100vh;
+    background-image: url("../images/hero\ img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+div.home div.layer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* navbar */
+
+div.navbar {
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    padding-block: 20px;
+    z-index: 100;
+}
+
+div.navbar div.nav-container  a {
+    text-decoration: none;
+}
+
+div.navbar div.nav-container {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+div.navbar div.nav-container div.nav-logo {
+    float: left;
+}
+
+div.navbar div.nav-container div.nav-logo a {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 25px;
+    color: #ff305b;
+}
+
+div.navbar div.nav-container div.nav-links {
+    float: right;
+    padding-block: 2px;
+}
+
+div.navbar div.nav-container div.nav-links ul li {
+    float: left;
+    padding-inline: 10px;
+    text-transform: capitalize;
+}
+
+div.navbar div.nav-container div.nav-links ul li a {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ffecf0;
+    transition: all 0.4s ease-in-out;
+}
+
+div.navbar div.nav-container div.nav-links ul li a:hover {
+    color: #ff305b;
+}
+
+div.navbar div.nav-container div.nav-links div.lines {
+    display: none;
+}
+
+div.navbar div.nav-container div.nav-links div.lines div {
+    border: 1px solid #fff;
+    width: 25px;
+    margin-block: 5px;
+}
+
+/* -----------------end navbar----------------------- */
+
+div.home div.layer div.home-container {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: aliceblue;
+}
+
+div.home div.layer div.home-container h3 , h1 , h4 {
+    margin-bottom: 10px;
+}
+
+div.home div.layer div.home-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #fff;
+}
+
+div.home div.layer div.home-container h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 77px;
+    color: #ff305b;
+}
+
+div.home div.layer div.home-container h4 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+    color: #fff;
+}
+
+/* -----------------end section home----------------------- */
+
+/* section About */
+
+div.about div.container {
+    margin-inline: auto;
+    padding-block: 100px;
+}
+
+div.about div.container div.photo {
+    float: left;
+}
+
+div.about div.container div.photo div.photo-box {
+    width: 75%;
+    margin-left: 10%;
+    border: 8px solid #555555;
+    border-radius: 10px;
+    position: relative;
+}
+
+div.about div.container div.photo div.photo-box img {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+div.about div.container div.photo div.photo-box div.overlay {
+    background-color: #00000087;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.about div.container div.photo div.photo-box:hover div.overlay {
+    height: 100%;
+}
+
+div.about div.container div.photo div.photo-box div.overlay div.icons {
+    position: relative;
+    top: 50%;
+}
+
+div.about div.container div.photo div.photo-box div.overlay i {
+    margin-inline: 8px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+div.about div.container div.photo div.photo-box div.overlay i:hover {
+    color: #ff305b;
+}
+
+div.about div.container div.content {
+    float: left;
+}
+
+div.about div.container div.content h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333;
+    border-left: 5px solid #ff305b;
+    padding-left: 13px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+div.about div.container div.content p {
+    border-bottom: 1px  dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #555;
+}
+
+div.about div.container div.content ul li {
+    float: left;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555;
+}
+
+div.about div.container div.content ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.about div.container div.content #btn1 , #btn2 {
+    background-color: #ff305b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 25px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.about div.container div.content #btn1:hover , #btn2:hover {
+    background-color: #e7012f;
+}
+
+div.about div.container div.content div.buttons i {
+    margin-left: 5px;
+}
+
+/* -----------------end section About----------------------- */
+
+/* section services */
+
+div.services {
+    background-color: #f1f1f1;
+}
+
+div.services div.container {
+    margin-inline: auto;
+    padding-block: 100px 54px;
+    text-align: center;
+}
+
+div.services div.container div.header {
+    margin-bottom: 40px;
+}
+
+div.services div.container div.header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.services div.container div.header div.lines {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.services div.container div.header div.lines .line1 ,div.services div.container div.header div.lines .line3 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 100px;
+}
+
+div.services div.container div.header div.lines .line2 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 200px;
+}
+
+div.services div.container div.items-container {
+    margin-inline: auto;
+}
+
+div.services div.container div.items-container div.item {
+    float: left;
+    padding: 40px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.services div.container div.items-container div.item:hover {
+    background-color: #fff;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+div.services div.container div.items-container div.item i {
+    font-size: 30px;
+    color: #ff305b;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.services div.container div.items-container div.item:hover i {
+    scale: 1.3;
+}
+
+div.services div.container div.items-container div.item h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+div.services div.container div.items-container div.item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #555;
+}
+
+/* -----------------end section services----------------------- */
+
+/* section portfolio */
+
+div.portfolio div.container {
+    margin-inline: auto;
+    padding-block: 100px;
+    text-align: center;
+}
+
+div.portfolio div.container div.header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.portfolio div.container div.header div.lines {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.portfolio div.container div.header div.lines .line1 ,div.portfolio div.container div.header div.lines .line3 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 100px;
+}
+
+div.portfolio div.container div.header div.lines .line2 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 200px;
+}
+
+div.portfolio div.container div.header div.categories {
+    margin-top: 40px;
+}
+
+div.portfolio div.container div.header div.categories span {
+    padding-inline: 15px;
+
+}
+
+div.portfolio div.container div.header span a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+div.portfolio div.container div.header span.i-1 a {
+    color: #ff305b;
+}
+
+div.portfolio div.container div.items-container {
+    margin-top: 50px;
+    margin-inline: auto;
+}
+
+div.portfolio div.container div.item {
+    float: left;
+    padding-inline: 15px;
+    margin-bottom: 30px;
+}
+
+div.portfolio div.container div.item div.container-i {
+    position: relative;
+    width: 100%;
+}
+
+div.portfolio div.container div.item img {
+    width: 100%;
+    display: block;
+}
+
+div.portfolio div.container div.item div.overlay {
+    background-color: #00000087;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+div.portfolio div.container div.item div.overlay:hover {
+    opacity: 1;
+}
+
+div.portfolio div.container div.item div.overlay div.icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+div.portfolio div.container div.item div.overlay i {
+    color: #ff305b;
+    font-size: 20px;
+}
+
+/* -----------------end section portfolio----------------------- */
+
+/* section facts */
+
+div.facts {
+    background-color: #f1f1f1;
+}
+
+div.facts div.container {
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 100px;
+}
+
+div.facts div.container div.item {
+    float: left;
+    padding-inline: 16px;
+    margin-block: 15px;
+    text-align: center;
+}
+
+div.facts div.container div.item i {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #ff305b;
+}
+
+div.facts div.container div.item h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 29px;
+    color: #333;
+}
+
+div.facts div.container div.item h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* -----------------end section facts----------------------- */
+
+/* section feedback */
+
+div.feedback div.container {
+    margin-inline: auto;
+    padding-block: 100px;
+}
+
+div.feedback div.container div.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+div.feedback div.container div.header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.feedback div.container div.header div.lines {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.feedback div.container div.header div.lines .line1 ,div.feedback div.container div.header div.lines .line3 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 100px;
+}
+
+div.feedback div.container div.header div.lines .line2 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 200px;
+}
+
+div.feedback div.container div.user-feedback {
+    background-color: #f1f1f1;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+div.feedback div.container div.user-feedback div.edge-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 90px solid;
+    border-color: #ff305b transparent transparent #ff305b;
+    border-radius: 5px 0 0 0;
+}
+
+div.feedback div.container div.user-feedback div.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    padding: 40px;
+    background-color: transparent;
+}
+
+div.feedback div.container div.user-feedback div.content div.photo {
+    float: left;
+    width: 15%;
+}
+
+div.feedback div.container div.user-feedback div.content div.photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+div.feedback div.container div.user-feedback div.content div.text {
+    float: left;
+    width: 85%;
+    padding-left: 30px;
+}
+
+div.feedback div.container div.user-feedback div.content div.text h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+div.feedback div.container div.user-feedback div.content div.text h4 a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17%;
+    color: #777;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+div.feedback div.container div.user-feedback div.content div.text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 25px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+div.feedback div.container div.user-feedback div.content div.text div.icons{
+    color: #f1c30d;
+}
+
+div.feedback div.container div.dots {
+    margin-top: 10px;
+    position: absolute;
+    left: 48%;
+}
+
+div.feedback div.container div.dots div.dot-1 {
+    float: left;
+    width: 25px;
+    height: 10px;
+    background-color: #ff305b;
+    border-radius: 20px;
+    margin-inline: 2px;
+}
+
+div.feedback div.container div.dots div.dot-2 {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ff305b;
+    border-radius: 50%;
+    margin-inline: 2px;
+}
+
+/* -----------------end section feedback----------------------- */
+
+/* section blog */
+
+div.blog {
+    background-color: #f1f1f1;
+}
+
+div.blog div.container {
+    margin-inline: auto;
+    padding-block: 100px;
+}
+
+div.blog div.container div.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+div.blog div.container div.header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.blog div.container div.header div.lines {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.blog div.container div.header div.lines .line1 ,div.blog div.container div.header div.lines .line3 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 100px;
+}
+
+div.blog div.container div.header div.lines .line2 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 200px;
+}
+div.blog div.container div.items-container {
+    margin-inline: auto;
+}
+
+div.blog div.container div.item {
+    float: left;
+    padding-inline: 15px;
+    margin-block: 15px;
+}
+
+div.blog div.container div.item img , div.blog div.container div.item iframe  {
+    width: 100%;
+    aspect-ratio: 2/1.1;
+    border: none;
+}
+
+div.blog div.container div.item div.content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+div.blog div.container div.item div.content p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #555;
+}
+
+div.blog div.container div.item a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+div.blog div.container div.item div.content h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+div.blog div.container div.item div.read a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+div.blog div.container div.item a:hover {
+    color: #ff305b;
+}
+
+/* -----------------end section blog----------------------- */
+
+/* section contact */
+
+div.contact div.container {
+    margin-inline: auto;
+    padding-block: 100px;
+}
+
+div.contact div.container div.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+div.contact div.container div.header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+div.contact div.container div.header div.lines {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.contact div.container div.header div.lines .line1 ,div.contact div.container div.header div.lines .line3 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 100px;
+}
+
+div.contact div.container div.header div.lines .line2 {
+    border: 1px solid #ff305b;
+    margin-block: 4px;
+    width: 200px;
+}
+
+div.contact div.container div.form-container input:focus , div.contact div.container div.form-container textarea:focus {
+    outline: 1px solid #ff305b;
+}
+
+div.contact div.container div.form-container input {
+    padding: 6px 12px;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div.contact div.container div.form-container div.col-1 {
+    float: left;
+    padding-inline: 15px;
+    margin-bottom: 25px;
+}
+
+div.contact div.container div.form-container div.col-2 {
+    float: left;
+    padding-inline: 15px;
+    margin-bottom: 25px;
+}
+
+div.contact div.container div.form-container div.row-1 input {
+    width: 100%;
+}
+
+div.contact div.container div.form-container div.row-2 , div.row-3 , div.row-4 {
+    padding-inline: 15px;
+    margin-bottom: 25px;
+}
+
+div.contact div.container div.form-container div.row-2 input {
+    width: 100%;
+}
+
+div.contact div.container div.form-container div.row-3 textarea {
+    width: 100%;
+    height: 100px;
+    font-family: "Roboto", sans-serif;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    resize: both;
+}
+
+div.contact div.container div.form-container div.row-4 button {
+    background-color: #ff305b;
+    color: #fff;
+    padding-inline: 20px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.contact div.container div.form-container div.row-4 button:hover {
+    background-color: #e7012f;
+}
+
+/* -----------------end section contact----------------------- */
+
+/* footer */
+
+footer {
+    background-color: #333;
+    padding-block: 50px;
+}
+
+footer div.container {
+    text-align: center;
+}
+
+footer div.container div.icons {
+    margin-bottom: 10px;
+}
+
+footer div.container div.icons a , footer div.container div.text p {
+    padding-inline: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+footer div.container div.icons a:hover {
+    color: #ff305b;
+}
+
+footer div.container div.text p a {
+    color: #ff305b;
+    text-decoration: none;
+}
+
+/* -----------------end section footer----------------------- */
+
+@media only screen and (max-width: 1200px) {
+    div.about div.container div.content p {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    div.about div.container div.content ul li {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    div.about div.container div.photo {
+        padding-right: 25px;
+    }
+
+    div.about div.container div.photo div.photo-box {
+        width: 100%;
+        margin-left: 0;
+        border: none;
+        border-radius: 10px;
+    }
+
+    div.about div.container div.photo div.photo-box img {
+        top: 0px;
+        left: 0px;
+    }
+
+    div.about div.container div.photo div.photo-box div.overlay {
+        bottom: 0;
+        left: 0;
+    }
+
+    div.about div.container div.content ul li {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    div.about div.container div.content ul li span {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    div.about div.container div.content #btn1 , #btn2 {
+        padding: 10px 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.navbar div.nav-container div.nav-links ul {
+        display: none;
+    }
+
+    div.navbar div.nav-container div.nav-links div.lines {
+        display: block;
+    }
+
+    div.about div.container div.photo {
+        padding-inline: 15px;
+    }
+    div.about div.container div.content {
+        margin-top: 30px;
+        padding-inline: 15px;
+    }
+
+    div.home div.layer div.home-container h3 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #fff;
+    }
+    
+    div.home div.layer div.home-container h1 {
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 42px;
+        color: #ff305b;
+    }
+    
+    div.home div.layer div.home-container h4 {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    div.services div.container div.header h2 {
+        font-size: 32px;
+    }
+    div.portfolio div.container div.header h2 {
+        font-size: 32px;
+    }
+    div.feedback div.container div.header h2 {
+        font-size: 32px;
+    }
+    div.blog div.container div.header h2 {
+        font-size: 32px;
+    }
+    div.contact div.container div.header h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

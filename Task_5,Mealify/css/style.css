@@ -1,0 +1,974 @@
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --open-sans-font: "Open Sans", sans-serif;
+    --Amatic-SC-font: "Amatic SC", sans-serif;
+    --inter-font: "Inter", sans-serif;
+    --primary-color: #ce1212;
+    --default-color: #212529;
+    --color-secondary: #37373f;
+    --color-tertiary: #7f7f90;
+    --color-light-grey: #eee;
+    --hover-bg-color: #ee1b1b;
+    --animation-duration: 400ms;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgb(255, 98, 98);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* navbar */
+
+div.navbar {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    padding-block: 25px;
+    z-index: 20;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.navbar div.container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: var(--open-sans-font);
+}
+
+div.navbar div.container div.logo a {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--default-color);
+}
+
+div.navbar div.container div.logo a::after {
+    content: ".";
+    color: var(--primary-color);
+}
+
+div.navbar div.container div.links {
+    display: none;
+}
+
+div.navbar div.container div.links ul {
+    display: flex;
+    gap: 30px;
+    
+}
+
+div.navbar div.container div.links ul li a {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    transition: all var(--animation-duration);
+}
+
+div.navbar div.container div.links ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: all var(--animation-duration);
+}
+
+div.navbar div.container div.links ul li a:hover::before {
+    width: 100%;
+}
+
+div.navbar div.container div.links ul li a:hover {
+    color: #000;
+}
+
+div.navbar div.container div.icon {
+    font-size: 25px;
+    color: var(--default-color);
+}
+
+div.navbar div.container div.icon i.menu {
+    margin-left: 20px;
+}
+
+/* ----------------end navbar---------------- */
+
+
+/* home */
+
+div.home {
+    background-color: var(--color-light-grey);
+}
+
+div.home div.container {
+    padding: 130px 0 40px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+div.home div.container div.home-content {
+    text-align: center;
+}
+
+div.home div.container div.home-content h2 {
+    font-family: var(--Amatic-SC-font);
+    font-size: 65px;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+div.home div.container div.home-content p {
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--color-tertiary);
+    margin-block: 20px;
+}
+
+div.home div.container div.home-content div.btn-group {
+    font-family: var(--open-sans-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+div.home div.container div.home-content div.btn-group #btn-1 {
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 100px;
+    transition: all var(--animation-duration);
+}
+
+div.home div.container div.home-content div.btn-group #btn-1:hover {
+    background-color: var(--hover-bg-color);
+}
+
+div.home div.container div.home-content div.btn-group #btn-2 {
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--default-color);
+    display: flex;
+    align-items: center;
+    transition: all var(--animation-duration);
+}
+
+div.home div.container div.home-content div.btn-group #btn-2:hover {
+    color: var(--primary-color);
+}
+
+div.home div.container div.home-content div.btn-group #btn-2 i {
+    z-index: 10;
+}
+
+div.home div.container div.home-content div.btn-group #btn-2 div.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, var(--primary-color) 0 50%, transparent 50% 100%);
+    position: relative;
+}
+
+div.home div.container div.home-content div.btn-group #btn-2 div.icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+div.home div.container div.home-picture img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+div.home div.container div.home-picture img:hover {
+    animation: shake 1s infinite;
+}
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* ----------------end home---------------- */
+
+/* chefs */
+
+div.chefs {
+    padding-block: 100px;
+}
+
+div.chefs div.container {
+    margin-inline: auto;
+}
+
+div.chefs div.container div.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.chefs div.container div.header h2 {
+    font-family: var(--inter-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+}
+
+div.chefs div.container div.header p {
+    font-family: var(--Amatic-SC-font);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--default-color);
+    text-transform: capitalize;
+}
+
+div.chefs div.container div.header span {
+    color: var(--primary-color);
+}
+
+div.chefs div.container div.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+div.chefs div.container div.items-container div.item {
+    position: relative;
+    width: calc(( 100% / 1 ) - 30px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: scale var(--animation-duration);
+}
+
+div.chefs div.container div.items-container div.item:hover {
+    scale: 1.05;
+}
+
+div.chefs div.container div.items-container div.item div.picture {
+    position: relative;
+}
+
+div.chefs div.container div.items-container div.item div.picture::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 7%;
+    background-image: url("../images/wave.png");
+    background-size: cover;
+}
+
+div.chefs div.container div.items-container div.item div.picture img {
+    width: 100%;
+    display: block;
+}
+
+div.chefs div.container div.items-container div.item div.content {
+    padding: 10px 25px 25px;
+    text-align: center;
+}
+
+div.chefs div.container div.items-container div.item div.content h3 {
+    font-family: var(--inter-font);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--default-color);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+div.chefs div.container div.items-container div.item div.content span {
+    font-family: var(--open-sans-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+    text-transform: capitalize;
+}
+
+div.chefs div.container div.items-container div.item div.content p {
+    font-family: var(--open-sans-font);
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-tertiary);
+    margin-top: 10px;
+}
+
+div.chefs div.container div.items-container div.item div.social-box {
+    background-color: #ffffff4d;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    translate: 140% 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: translate var(--animation-duration) 0.5s;
+}
+
+div.chefs div.container div.items-container div.item:hover div.social-box {
+    translate: 0;
+}
+
+div.chefs div.container div.items-container div.item div.social-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+div.chefs div.container div.items-container div.item div.social-box ul li a {
+    font-size: 20px;
+    color: #37373f85;
+    transition: all var(--animation-duration);
+}
+
+div.chefs div.container div.items-container div.item div.social-box ul li a:hover {
+    color: #37373fed;
+}
+
+/* ----------------end chefs---------------- */
+
+/* gallery */
+
+div.gallery {
+    background-color: var(--color-light-grey);
+    padding-block: 100px;
+}
+
+div.gallery div.container {
+    margin-inline: auto;
+}
+
+div.gallery div.container div.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.gallery div.container div.header h2 {
+    font-family: var(--inter-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+}
+
+div.gallery div.container div.header p {
+    font-family: var(--Amatic-SC-font);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--default-color);
+    text-transform: capitalize;
+}
+
+div.gallery div.container div.header span {
+    color: var(--primary-color);
+}
+
+div.gallery div.container div.item-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+}
+
+div.gallery div.container div.item-container div.item {
+    position: relative;
+    width: calc((100% / 1) - 15px);
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+
+div.gallery div.container div.item-container div.item img {
+    width: 100%;
+    display: block;
+    transition: all var(--animation-duration);
+}
+
+div.gallery div.container div.item-container div.item:hover img {
+    scale: 1.1;
+}
+
+div.gallery div.container div.item-container div.item div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    top: 0;
+    translate: 0 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all var(--animation-duration);
+}
+
+div.gallery div.container div.item-container div.item:hover div.overlay {
+    translate: 0;
+}
+
+div.gallery div.container div.item-container div.item div.overlay h2 {
+    font-family: var(--inter-font);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+div.gallery div.container div.item-container div.item div.overlay p {
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: #ddd;
+}
+
+div.gallery div.container div.item-container div.picture-1 {
+    order: 1;
+}
+div.gallery div.container div.item-container div.picture-2 {
+    order: 5;
+}
+div.gallery div.container div.item-container div.picture-3 {
+    order: 2;
+}
+div.gallery div.container div.item-container div.picture-4 {
+    order: 3;
+}
+div.gallery div.container div.item-container div.picture-5 {
+    order: 6;
+}
+div.gallery div.container div.item-container div.picture-6 {
+    order: 7;
+}
+div.gallery div.container div.item-container div.picture-7 {
+    order: 4;
+}
+
+/* ----------------end gallery---------------- */
+
+/* contact */
+
+div.contact {
+    padding-block: 100px;
+}
+
+div.contact div.container {
+    margin-inline: auto;
+}
+
+div.contact div.container div.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.contact div.container div.header h2 {
+    font-family: var(--inter-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+}
+
+div.contact div.container div.header p {
+    font-family: var(--Amatic-SC-font);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--default-color);
+    text-transform: capitalize;
+}
+
+div.contact div.container div.header span {
+    color: var(--primary-color);
+}
+
+div.contact div.container div.map iframe {
+    width: 100%;
+    height: 350px;
+}
+
+div.contact div.container div.details {
+    margin-block: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+div.contact div.container div.details div.item {
+    width: calc(100% / 1);
+    background-color: var(--color-light-grey);
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: var(--default-color);
+    font-family: var(--open-sans-font);
+}
+
+div.contact div.container div.details div.item div.icon {
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+div.contact div.container div.details div.item div.content h3 {
+    margin-bottom: 5px;
+    font-family: var(--inter-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: #7d7d7d;
+    text-transform: capitalize;
+}
+
+div.contact div.container div.details div.item div.content a {
+    color: inherit;
+}
+div.contact div.container div.details div.item div.content span {
+    font-weight: 700;
+}
+
+div.contact div.container form {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: var(--open-sans-font);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--default-color);
+    text-transform: capitalize;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1);
+}
+
+div.contact div.container form input ,
+div.contact div.container form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e8e3e3;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    transition: all var(--animation-duration);
+}
+
+div.contact div.container form input:focus ,
+div.contact div.container form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+div.contact div.container form input#name ,
+div.contact div.container form input#email {
+    width: calc(100% / 1);
+}
+
+div.contact div.container form textarea {
+    min-height: 140px;
+    max-height: 250px;
+    resize: vertical;
+}
+
+div.contact div.container form div.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contact div.container form button {
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    font-size: 15px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    padding: 15px 40px;
+    margin-top: 25px;
+    transition: all var(--animation-duration);
+}
+
+div.contact div.container form button:hover {
+    background-color: var(--hover-bg-color);
+    cursor: pointer;
+}
+
+/* ----------------end contact---------------- */
+
+/* footer */
+
+footer {
+    background-color: #030203;
+    color: #fff;
+}
+
+footer div.container {
+    margin-inline: auto;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer div.container div.about ,
+footer div.container div.contact-details {
+    width: 100%;
+}
+
+footer div.container div.subscription {
+    width: 100%;
+}
+
+footer div.container div.about div.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer div.container div.about div.logo img {
+    width: 40px;
+    display: block;
+}
+
+footer div.container div.about div.logo h2 {
+    font-family: var(--open-sans-font);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+footer div.container div.about div.logo h2::after {
+    content: ".";
+    color: var(--primary-color);
+}
+
+footer div.container div.about p {
+    margin-block: 10px;
+    font-family: var(--open-sans-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer div.container div.about h3 {
+    text-align: center;
+    border-bottom: 2px solid #ddd6;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--inter-font);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+footer div.container div.about div.social-box {
+    padding: 10px;
+}
+
+footer div.container div.about div.social-box ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+
+footer div.container div.subscription h3 {
+    font-family: var(--inter-font);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+footer div.container div.subscription p {
+    margin-block: 10px;
+    font-family: var(--open-sans-font);
+}
+
+footer div.container div.subscription form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    margin-block: 20px;
+    font-family: var(--open-sans-font);
+    text-transform: capitalize;
+}
+
+footer div.container div.subscription form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    text-transform: inherit;
+}
+
+footer div.container div.subscription form button {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    color: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    background-color: var(--primary-color);
+    border: none;
+    transition: all var(--animation-duration);
+}
+
+footer div.container div.subscription form button:hover {
+    background-color: var(--hover-bg-color);
+}
+
+footer div.container div.subscription div.quick-links ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+footer div.container div.subscription div.quick-links ul li {
+    width: calc((100% / 2) - 15px);
+    padding: 5px;
+    transition: all var(--animation-duration);
+}
+
+footer div.container div.subscription div.quick-links ul li:hover {
+    translate: 10px 0;
+    background-color: #222;
+}
+
+footer div.container div.subscription div.quick-links ul li a {
+    font-family: var(--open-sans-font);
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+footer div.container div.contact-details h3 {
+    margin-bottom: 10px;
+    font-family: var(--inter-font);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+footer div.container div.contact-details ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--open-sans-font);
+}
+
+footer div.container div.contact-details ul li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ----------------end footer---------------- */
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    footer div.container div.subscription form {
+        flex-direction: row;
+    }
+    
+    footer div.container div.subscription form button {
+        width: 110px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    div.chefs div.container div.items-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    div.chefs div.container div.items-container div.item {
+        width: calc(( 100% / 2 ) - 30px);
+    }
+
+    div.gallery div.container div.item-container {
+        height: 1700px;
+    }
+
+    div.gallery div.container div.item-container div.item {
+        width: calc((100% / 2) - 15px);
+    }
+
+    div.contact div.container div.details div.item {
+        width: calc((100% / 2) - 7.5px);
+    }
+
+    footer div.container div.about ,
+    footer div.container div.contact-details {
+        width: calc((100% / 2) - 15px);
+        order: -1;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    div.home div.container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        
+    }
+    
+    div.home div.container div.home-content {
+        width: 40%;
+        text-align: start;
+    }
+
+    div.home div.container div.home-content div.btn-group {
+        justify-content: flex-start;
+    }
+
+    div.home div.container div.home-content div.btn-group #btn-1 {
+        padding: 12px 25px;
+        border-radius: 0 100px 100px 100px;
+    }
+
+    div.home div.container div.home-picture {
+        width: 40%;
+    }
+
+    div.chefs div.container div.items-container div.item {
+        width: calc(( 100% / 3 ) - 30px);
+    }
+
+    div.gallery div.container div.item-container {
+        height: 950px;
+    }
+
+    div.gallery div.container div.item-container div.item {
+        width: calc((100% / 3) - 15px);
+    }
+
+    div.gallery div.container div.item-container div.picture-2 {
+        order: 3;
+    }
+    div.gallery div.container div.item-container div.picture-3 {
+        order: 5;
+    }
+    div.gallery div.container div.item-container div.picture-4 {
+        order: 2;
+    }
+
+    div.contact div.container form input#name ,
+    div.contact div.container form input#email {
+    width: calc((100% / 2) - 7.5px);
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    div.navbar div.container div.links {
+        display: block;
+    }
+
+    div.navbar div.container div.icon i.menu {
+        margin-left: 0;
+        display: none;
+    }
+
+    div.home {
+        height: 100vh;
+    }
+
+    div.gallery div.container div.item-container {
+        height: 1200px;
+    }
+
+    footer div.container div.about ,
+footer div.container div.contact-details {
+    width: calc(((100% / 2) / 2) - 15px);
+    order: 0;
+}
+
+footer div.container div.subscription {
+    width: calc((100% / 2) - 30px);
+}
+}

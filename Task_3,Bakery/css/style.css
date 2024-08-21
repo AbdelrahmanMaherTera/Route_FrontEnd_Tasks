@@ -1,0 +1,470 @@
+/* shared styles */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.in-line-block {
+    display: inline-block;
+}
+
+.alegreya-font {
+    font-family: "Alegreya", serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* section home */
+
+div.home {
+    height: 100vh;
+    background-image: url("../images/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 100px;
+}
+
+div.home div.home-layer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.219);
+    overflow: auto;
+}
+
+/* navbar */
+
+div.home div.home-layer div.navbar {
+    height: 90px;
+    padding-block: 20px;
+}
+
+div.home div.home-layer div.navbar div.nav-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+div.home div.home-layer div.navbar div.nav-container .nav-logo {
+    width: 14.4%;
+    float: left;
+}
+
+div.home div.home-layer div.navbar div.nav-container .nav-logo img {
+    width: 100%;
+}
+
+div.home div.home-layer div.navbar div.nav-container .nav-links {
+    float: right;
+    margin-top: 13px;
+}
+
+div.home div.home-layer div.navbar div.nav-container .nav-links li {
+    float: left;
+    margin-inline: 15px;
+}
+
+div.home div.home-layer div.navbar div.nav-container .nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+}
+
+/* -----------------end navbar----------------------- */
+
+div.home div.home-layer div.home-container {
+    text-align: center;
+    margin-top: 150px;
+}
+
+div.home div.home-layer div.home-container p.text1 {
+    font-size: 22px;
+    line-height: 41px;
+    color: #ffffffeb;
+    margin-bottom: 5px;
+}
+
+div.home div.home-layer div.home-container h1 {
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 91px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+div.home div.home-layer div.home-container p.text2 {
+    padding-inline: 27%;
+    font-size: 24px;
+    line-height: 45px;
+    color: #ffffffeb;
+    margin-bottom: 30px;
+}
+
+div.home div.home-layer div.home-container div.buttons #btn1 , #btn2{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+div.home div.home-layer div.home-container div.buttons #btn1 {
+    background-color: #8e7754;
+    border: 1.6px #8e7754 solid;
+    margin-bottom: 12px;
+}
+
+div.home div.home-layer div.home-container div.buttons #btn2 {
+    background-color: transparent;
+    border: 1.6px white solid;
+    margin: 0px 0px 12px 12px;
+}
+
+/* -----------------end section home-------------------- */
+
+/* section who are you */
+
+div.who-are-you {
+    margin-bottom: 100px;
+    padding-inline: 10%;
+}
+
+div.who-are-you div.photo {
+    width: 46.5%;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+div.who-are-you img {
+    width: 100%;
+}
+
+div.who-are-you div.content {
+    width: 46%;
+    vertical-align: middle;
+}
+
+div.who-are-you div.content div.text h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #303030;
+    margin-bottom: 25px;
+}
+
+div.who-are-you div.content div.text p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+div.who-are-you div.content div.group-icons-and-text {
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+div.who-are-you ul.icon-list li {
+    margin-bottom: 15px;
+}
+
+div.who-are-you ul.icon-list img {
+    width: 43px;
+    border: 1px #cbcbcb solid;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* -----------------end section who are you-------------------- */
+
+/* section our location */
+
+div.our-location {
+    background-color: #f8f8f8;
+    padding: 80px 10%;
+    margin-bottom: 100px;
+}
+
+div.our-location div.content {
+    width: 46%;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+div.our-location div.content h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #303030;
+    margin-bottom: 25px;
+}
+
+div.our-location div.content p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+div.our-location div.content p.text1 {
+    margin-bottom: 20px;
+}
+
+div.our-location div.photo {
+    width: 46.5%;
+    vertical-align: middle;
+}
+
+div.our-location div.photo img {
+    width: 100%;
+}
+
+/* -----------------end section our location-------------------- */
+
+/* section our braking */
+
+div.our-baking {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+div.our-baking div.heading-text {
+    margin: 10px 0px 60px;
+}
+
+div.our-baking div.heading-text h3 {
+    margin-bottom: 17px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #303030;
+}
+
+div.our-baking  div.heading-text p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #888;
+}
+
+div.our-baking div.items-container {
+    width: 80%;
+    margin: auto;
+} 
+
+div.our-baking div.item {
+    width: 33.3%;
+    float: left;
+    padding-inline: 15px 20px;
+}
+
+div.our-baking div.item img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div.our-baking div.item h4 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #303030;
+}
+
+div.our-baking div.item p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #686868;
+}
+
+/* -----------------end section our braking-------------------- */
+
+/* section contact-info */
+
+div.contact-info {
+    background-color: #f8f8f8;
+    padding-block: 85px;
+    margin-bottom: 100px;
+}
+
+div.contact-info div.container {
+    width: 80%;
+    margin: auto;
+}
+
+div.contact-info div.container div.content {
+    width: 46%;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+div.contact-info div.container div.content div.text {
+    margin-bottom: 30px;
+}
+
+div.contact-info div.container div.content div.text h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #303030;
+}
+
+div.contact-info div.container div.content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #686868;   
+}
+
+div.contact-info div.container div.content ul.icon-list {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #686868;
+}
+
+div.contact-info div.container div.content div.group-icons-and-text li {
+    margin-bottom: 15px;
+}
+
+div.contact-info div.container div.content img {
+    width: 100%;
+    background-color: #8e7754;
+    border-radius: 50%;
+}
+
+div.contact-info div.container div.content div.group-icons-and-text img {
+    width: 43px;
+    border: 1px #cbcbcb solid;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+div.contact-info div.container div.map {
+    width: 46.5%;
+    vertical-align: middle;
+}
+
+/* -----------------end section contact-info-------------------- */
+
+/* footer */
+
+/* fsec 1 */
+
+footer div.fsec1 {
+    background-color: #403d38;
+    padding-block: 60px 52px;
+}
+
+footer div.fsec1 div.container {
+    width: 80%;
+    margin: auto;
+}
+
+footer div.fsec1 div.container div.item {
+    width: 25%;
+    padding-inline: 16px;
+    float: left;
+}
+
+footer div.fsec1 div.container div.item h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+}
+
+footer div.fsec1 div.container div.item p , footer div.fsec1 div.container div.item  span {
+    font-size: 16px;
+    line-height: 30px;
+    color: #969696;
+}
+
+footer div.fsec1 div.container div.item hr {
+    height: 1px;
+    background-color: #9696967a;
+    border: none;
+    margin-block: 5px;
+}
+
+footer div.fsec1 div.container div.item P.text1 {
+    margin-bottom: 20px;
+}
+
+footer div.fsec1 div.container .col-2 img , footer div.fsec1 div.container .col-3 img {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+footer div.fsec1 div.container .col-4 ul {
+    background-image: url("../images/contact-details-map.png");
+    background-size: 280px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+footer div.fsec1 div.container .col-4 img {
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+/* -----------------end fsec 1-------------------- */
+
+/* fsec 2 */
+
+footer div.fsec2 {
+    background-color: #353330;
+    padding-block: 50px 40px;
+    text-align: center;
+}
+
+footer div.fsec2 div.container {
+    width: 80%;
+    margin: auto;
+}
+
+footer div.fsec2 div.container img {
+    width: 353;
+    margin-block: 10px 25px;
+}
+
+footer div.fsec2 div.container p {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 28px;
+    color: #777;
+}
+
+footer div.fsec2 div.group-icons {
+    margin-top: 25px;
+}
+
+footer div.fsec2 div.icon img {
+    background-color: #484540;
+    width: 40px;
+    border-radius: 50%;
+    margin-inline: 5px;
+}
+
+/* -----------------end fsec 2-------------------- */
+
+/* -----------------end footer-------------------- */

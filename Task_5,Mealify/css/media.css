@@ -1,0 +1,227 @@
+.xsm-100 {
+    width: 100%;
+}
+
+.xsm-90 {
+    width: 90%;
+}
+
+.xsm-80 {
+    width: 80%;
+}
+.xsm-75 {
+    width: 75%;
+}
+
+.xsm-70 {
+    width: 70%;
+}
+
+.xsm-60 {
+    width: 60%;
+}
+
+.xsm-50 {
+    width: 50%;
+}
+
+.xsm-33 {
+    width: 33.333%;
+}
+
+.xsm-25 {
+    width: 25%;
+}
+
+.xsm-20 {
+    width: 20%;
+}
+
+.xsm-16 {
+    width: 16.666%;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sm-100 {
+        width: 100%;
+    }
+
+    .sm-90 {
+        width: 90%;
+    }
+
+    .sm-80 {
+        width: 80%;
+    }
+    .sm-75 {
+        width: 75%;
+    }
+
+    .sm-70 {
+        width: 70%;
+    }
+
+    .sm-60 {
+        width: 60%;
+    }
+    
+    .sm-50 {
+        width: 50%;
+    }
+    
+    .sm-33 {
+        width: 33.333%;
+    }
+    
+    .sm-25 {
+        width: 25%;
+    }
+    
+    .sm-20 {
+        width: 20%;
+    }
+    
+    .sm-16 {
+        width: 16.666%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .md-100 {
+        width: 100%;
+    }
+
+    .md-90 {
+        width: 90%;
+    }
+
+    .md-80 {
+        width: 80%;
+    }
+    .md-75 {
+        width: 75%;
+    }
+
+    .md-70 {
+        width: 70%;
+    }
+
+    .md-60 {
+        width: 60%;
+    }
+    
+    .md-50 {
+        width: 50%;
+    }
+    
+    .md-33 {
+        width: 33.333%;
+    }
+    
+    .md-25 {
+        width: 25%;
+    }
+    
+    .md-20 {
+        width: 20%;
+    }
+    
+    .md-16 {
+        width: 16.666%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .lg-100 {
+        width: 100%;
+    }
+
+    .lg-90 {
+        width: 90%;
+    }
+
+    .lg-80 {
+        width: 80%;
+    }
+    .lg-75 {
+        width: 75%;
+    }
+
+    .lg-70 {
+        width: 70%;
+    }
+
+    .lg-60 {
+        width: 60%;
+    }
+    
+    .lg-50 {
+        width: 50%;
+    }
+    
+    .lg-33 {
+        width: 33.333%;
+    }
+    
+    .lg-25 {
+        width: 25%;
+    }
+    
+    .lg-20 {
+        width: 20%;
+    }
+    
+    .lg-16 {
+        width: 16.666%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .xlg-100 {
+        width: 100%;
+    }
+
+    .xlg-90 {
+        width: 90%;
+    }
+
+    .xlg-80 {
+        width: 80%;
+    }
+    .xlg-75 {
+        width: 75%;
+    }
+
+    .xlg-70 {
+        width: 70%;
+    }
+
+    .xlg-60 {
+        width: 60%;
+    }
+    
+    .xlg-50 {
+        width: 50%;
+    }
+    
+    .xlg-33 {
+        width: 33.333%;
+    }
+    
+    .xlg-25 {
+        width: 25%;
+    }
+    
+    .xlg-20 {
+        width: 20%;
+    }
+    
+    .xlg-16 {
+        width: 16.666%;
+    }
+}
