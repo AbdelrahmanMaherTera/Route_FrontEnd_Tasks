@@ -1,0 +1,976 @@
+/* shared styles */
+
+:root {
+    scroll-padding-top: 53px;
+    --default-font: "Poppins", system-ui;
+    --header-font: "Montserrat", system-ui;
+    --bg-gray: #f7f7f7;
+}
+
+body {
+    font-family: var(--default-font);
+    font-weight: 400;
+    color: #343434;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , a.navbar-brand {
+    font-family: var(--header-font);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header.title {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+header.title h3 {
+    width: fit-content;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 900;
+    z-index: 2;
+}
+
+header.title h3::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+/* --------------------end shared styles-------------------- */
+
+/* navbar */
+
+nav {
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+nav a.navbar-brand {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1c1c1c !important;
+}
+
+nav .navbar-toggler ,
+nav .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+nav div.navbar-collapse ul {
+    row-gap: 10px;
+    column-gap: 40px;
+}
+
+nav div.navbar-collapse ul li a {
+    font-size: 0.875rem;
+    color: #111 !important;
+    position: relative;
+}
+
+nav div.navbar-collapse ul li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 8px;
+    background-color: #222;
+    transition: all 0.5s;
+}
+
+nav div.navbar-collapse ul li a.active::before {
+    width: 100%;
+}
+
+/* --------------------end navbar-------------------- */
+
+/* section home */
+
+header.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 50% , rgba(0, 0, 0, 0.6) 50%) , url("../images/bg.jpg");
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff !important;
+}
+
+header.home div.home-content h5 {
+    font-size: 3.125rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header.home div.home-content h1 {
+    font-size: 1.875rem;
+    font-weight: 200;
+    margin-inline: 12px;
+}
+
+header.home div.home-content h1 span::after {
+    content: "Larry Daniels|";
+    font-weight: 400;
+    border-right: 3px solid #fff;
+    padding-right: 2px;
+    animation: typing 8s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "L";
+    }
+
+    1.4% {
+        content: "La";
+    }
+
+    2.8% {
+        content: "Lar";
+    }
+
+    4.2% {
+        content: "Larr";
+    }
+
+    5.6% {
+        content: "Larry";
+    }
+
+    7% {
+        content: "Larry ";
+    }
+
+    8.4% {
+        content: "Larry D";
+    }
+
+    9.8% {
+        content: "Larry Da";
+    }
+
+    11.2% {
+        content: "Larry Dan";
+    }
+
+    12.6% {
+        content: "Larry Dani";
+    }
+
+    14% {
+        content: "Larry Danie";
+    }
+
+    15.4% {
+        content: "Larry Daniel";
+    }
+
+    16.8% {
+        content: "Larry Daniels";
+    }
+
+    18.2% {
+        content: "Larry Daniels";
+    }
+
+    19.6% {
+        content: "Larry Daniels";
+    }
+
+    21% {
+        content: "Larry Daniels";
+    }
+
+    22.4% {
+        content: "Larry Daniels";
+    }
+
+    23.8% {
+        content: "Larry Daniel";
+    }
+
+    25.2% {
+        content: "Larry Danie";
+    }
+
+    26.6% {
+        content: "Larry Dani";
+    }
+
+    28% {
+        content: "Larry Dan";
+    }
+
+    29.4% {
+        content: "Larry Da";
+    }
+
+    30.8% {
+        content: "Larry D";
+    }
+
+    32.2% {
+        content: "Larry ";
+    }
+
+    33.6% {
+        content: "Larry";
+    }
+
+    35% {
+        content: "Larr";
+    }
+
+    36.4% {
+        content: "Lar";
+    }
+
+    37.8% {
+        content: "La";
+    }
+
+    39.2% {
+        content: "L";
+    }
+
+    40.6% {
+        content: "";
+    }
+
+    42% {
+        content: "D";
+    }
+
+    43.4% {
+        content: "De";
+    }
+
+    44.8% {
+        content: "Dev";
+    }
+
+    46.2% {
+        content: "Deve";
+    }
+
+    47.6% {
+        content: "Devel";
+    }
+
+    49% {
+        content: "Develo";
+    }
+
+    50.4% {
+        content: "Develop";
+    }
+
+    51.8% {
+        content: "Develope";
+    }
+
+    53.2% {
+        content: "Developer";
+    }
+
+    54.6% {
+        content: "Developer";
+    }
+
+    56% {
+        content: "Developer";
+    }
+
+    57.4% {
+        content: "Developer";
+    }
+    58.8% {
+        content: "Developer";
+    }
+
+    60.2% {
+        content: "Develope";
+    }
+
+    61.6% {
+        content: "Develop";
+    }
+
+    63% {
+        content: "Develo";
+    }
+
+    64.4% {
+        content: "Devel";
+    }
+
+    65.8% {
+        content: "Deve";
+    }
+
+    67.2% {
+        content: "Dev";
+    }
+
+    68.6% {
+        content: "De";
+    }
+
+    70% {
+        content: "D";
+    }
+
+    71.4% {
+        content: "";
+    }
+
+    72.8% {
+        content: "D";
+    }
+
+    74.2% {
+        content: "De";
+    }
+
+    75.6% {
+        content: "Des";
+    }
+
+    77% {
+        content: "Desi";
+    }
+
+    78.4% {
+        content: "Desig";
+    }
+
+    79.8% {
+        content: "Design";
+    }
+
+    81.2% {
+        content: "Designe";
+    }
+
+    82.6% {
+        content: "Designer";
+    }
+
+    84% {
+        content: "Designer";
+    }
+
+    85.4% {
+        content: "Designer";
+    }
+
+    86.8% {
+        content: "Designer";
+    }
+
+    88.2% {
+        content: "Designe";
+    }
+
+    89.6% {
+        content: "Design";
+    }
+
+    91% {
+        content: "Desig";
+    }
+
+    92.4% {
+        content: "Desi";
+    }
+
+    93.8% {
+        content: "Des";
+    }
+
+    95.2% {
+        content: "De";
+    }
+
+    96.6% {
+        content: "D";
+    }
+
+    100% {
+        content: "";
+    }
+
+}
+
+header.home div.home-content div.social-icons {
+    margin-top: 30px;
+}
+
+header.home div.home-content div.social-icons a div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* --------------------end section home-------------------- */
+
+/* section about */
+
+section.about {
+    padding-block: 100px 70px;
+}
+
+section.about div.about-photo {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section.about div.about-photo::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+section.about div.about-content h3 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+section.about div.about-content p.p-one {
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+section.about div.about-content p.p-two {
+    margin-bottom: 30px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #748182;
+}
+
+section.about div.about-content div.skills div.progress {
+    margin-bottom: 30px;
+    height: 25px;
+    font-family: var(--header-font);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+section.about div.about-content div.skills div.progress-bar {
+    background-color: #1c1c1c;
+    border-radius: 0.375rem;
+    padding-inline: 10px;
+}
+
+section.about div.about-content div.skills div.progress-bar span.rate {
+    font-size: 0.6875rem;
+}
+
+section.about div.about-content div.about-btn {
+    padding-block: 30px;
+}
+
+section.about div.about-content div.about-btn a {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 0.8125rem;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+section.about div.about-content div.about-btn a.btn-1 {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+section.about div.about-content div.about-btn a.btn-1:hover {
+    background-color: transparent;
+    color: #343434;
+}
+
+section.about div.about-content div.about-btn a.btn-2 {
+    color: #343434;
+}
+
+section.about div.about-content div.about-btn a.btn-2:hover {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* --------------------end section about-------------------- */
+
+/* section services */
+
+section.services {
+    background-color: #f7f7f7;
+    padding-block: 100px 70px;
+}
+
+section.services div.row div.col {
+    margin-bottom: 24px;
+}
+
+section.services div.services-item {
+    background-color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+section.services div.services-item div.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+section.services div.services-item:hover div.icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+section.services div.services-item h6 {
+    margin-bottom: 15px;
+    font-size: 1.125    rem;
+    font-weight: 800;
+}
+
+section.services div.services-item p {
+    margin: 0;
+    font-size: 0.875rem;
+    word-spacing: 2px;
+    line-height: 1.6;
+    color: #748182
+}
+
+/* --------------------end section services-------------------- */
+
+/* section works */
+
+section.works {
+    padding-block: 100px 70px;
+}
+
+section.works ul.move {
+    gap: 30px;
+    margin-bottom: 50px !important;
+}
+
+section.works ul.move li button {
+    font-weight: 700;
+    color: #222;
+    padding-bottom: 3px;
+    border: none;
+}
+
+section.works ul.move li button:hover {
+    border: none;
+}
+
+section.works ul.move li button.active {
+    color: #222;
+    border-bottom: 3px solid #222;
+}
+
+section.works div.work-item {
+    position: relative;
+}
+
+section.works div.work-item div.overlay {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 97%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    gap: 20px;
+    transition: all 0.5s;
+}
+
+section.works div.work-item:hover div.overlay {
+    opacity: 100%;
+    gap: 0;
+}
+
+section.works div.work-item div.overlay h6 {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+section.works div.work-item div.overlay div.overlay-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+section.works div.work-item div.overlay div.overlay-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: 50%;
+    line-height: 28px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    transition: all 0.1s;
+}
+
+section.works div.work-item div.overlay div.overlay-icons a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+section.works div.col div.modal div.modal-content div.modal-header i {
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.1s;
+}
+
+section.works div.col div.modal div.modal-content div.modal-header i:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* --------------------end section works-------------------- */
+
+/* section clients */
+
+section.clients {
+    padding-block: 100px 70px;
+    background-color: var(--bg-gray);
+}
+
+section.clients div.slide div.carousel-inner div.carousel-item div.slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.clients div.slide div.carousel-inner div.carousel-item div.slider-item div.slider-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+section.clients div.slide div.carousel-inner div.carousel-item div.slider-item p.text-1 {
+    max-width: 1000px;
+    font-size: 0.9375rem;
+    word-spacing: 2px;
+    color: #748182;
+}
+
+section.clients div.slide div.carousel-inner div.carousel-item div.slider-item h6 {
+    margin-block: 30px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.clients div.slide div.carousel-inner div.carousel-item div.slider-item p.text-2 {
+    margin-bottom: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #888;
+}
+
+section.clients div.slide div.carousel-indicators button {
+    margin-inline: 7px;
+    background-color: #d6d6d6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+section.clients div.slide div.carousel-indicators button.active {
+    background-color: #869791;
+    opacity: 1;
+}
+
+/* --------------------end section clients-------------------- */
+
+/* section clients */
+
+section.counter {
+    padding-block: 100px 70px;
+}
+
+section.counter div.col {
+    margin-bottom: 30px;
+    font-size: 1.875rem;
+}
+
+section.counter div.item div.counter-icon {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+section.counter div.item div.counter-content h3 {
+    font-weight: 900;
+}
+
+section.counter div.item div.counter-content p {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #748182;
+    margin: 0;
+}
+
+/* --------------------end section clients-------------------- */
+
+/* section team */
+
+section.team {
+    background-color: var(--bg-gray);
+    padding-block: 100px;
+}
+
+section.team div.row {
+    padding-top: 5%;
+}
+
+section.team div.row div.col {
+    margin-bottom: 10px;
+}
+
+section.team div.item {
+    background-color: rgba(52, 52, 52,0.8);
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}
+
+section.team div.item div.item-photo img {
+    transition: all 0.4s ease;
+}
+
+section.team div.item div.item-photo:hover img {
+    scale: 1.2;
+}
+
+section.team div.item div.item-photo div.overlay {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 97%;
+    height: 97%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    scale: 0.5;
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+}
+
+
+section.team div.item:hover div.item-photo div.overlay {
+    transform: rotateY(0deg);
+    scale: 1;
+    opacity: 1;
+}
+
+section.team div.item div.item-photo div.overlay div.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+}
+
+section.team div.item div.item-photo div.overlay div.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+
+section.team div.item div.item-photo div.overlay div.social-icons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section.team div.item div.item-content {
+    padding: 25px;
+    color: #fff;
+}
+
+/* --------------------end section team-------------------- */
+
+/* section contact */
+
+section.contact {
+    padding-block: 100px;
+}
+
+section.contact div.info div.item-container {
+    margin-bottom: 30px;
+}
+
+section.contact div.info div.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.contact div.info div.item div.item-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+section.contact div.info div.item:hover div.item-icon {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+section.contact div.info div.item p {
+    margin: 10px 0 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+section.contact form input ,
+section.contact form textarea {
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.875rem;
+}
+
+section.contact form textarea {
+    resize: both;
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+section.contact form button {
+    background-color: #1c1c1c;
+    color: #eee;
+    border: 1px solid #1c1c1c;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 0.8125rem;
+    transition: all 0.5s;
+}
+
+section.contact form button:hover {
+    background-color: transparent;
+    color: #343434;
+}
+
+/* --------------------end section contact-------------------- */
+
+/* section footer */
+
+footer {
+    background-color: #1c1c1c;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.8125rem;
+    word-spacing: 2px;
+    color: #748182;
+}
+
+/* --------------------end section footer-------------------- */
+
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+    header.home div.home-content h1 {
+        font-size: 2.75rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    :root {
+        scroll-padding-top: 52px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    header.home div.home-content h1 {
+        font-size: 3.75rem;
+    }
+}
