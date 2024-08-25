@@ -1,0 +1,951 @@
+/* Shared styles */
+:root {
+    --main-color: #343434;
+    --secondary--color: #748182;
+    --tertiatry-color: #1c1c1c;
+    --bg-icon: #f4f4f4;
+    scroll-padding-top: 50px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+}
+
+section.service,
+section.work {
+    padding-block: 100px 70px;
+}
+
+header h3 {
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 5;
+    width: fit-content;
+}
+
+header h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    left: 0;
+    bottom: -10px;
+    z-index: -1;
+}
+
+/* --------------------------------------------------------------------- */
+/* Navbar section */
+
+nav.navbar {
+    padding-block: 10px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+nav.navbar div.container .navbar-brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1;
+    color: var(--tertiatry-color);
+}
+
+nav.navbar div.container button.navbar-toggler {
+    border: none;
+}
+
+nav.navbar div.container button.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+ul.navbar-nav a.nav-link {
+    font-size: 15px;
+    color: var(--tertiatry-color);
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 !important;
+    font-weight: 500;
+}
+
+ul.navbar-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navbar-nav li.nav-item {
+    padding: 10px;
+}
+
+ul.navbar-nav a.nav-link::before {
+    content: "";
+    height: 1.5px;
+    width: 0;
+    background-color: var(--tertiatry-color);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.navbar-nav a.nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+/* --------------------------------------------------------------------- */
+/* Home section */
+
+header.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.home div.container div.content h5 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header.home div.container div.content h1 {
+    font-size: 30px;
+    padding-block: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+header.home div.container div.content h1 span {
+    font-weight: 200;
+}
+
+header.home div.container div.content h1::after {
+    content: "";
+    animation: typing 10s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1.64% {
+        content: "D|";
+    }
+
+    3.28% {
+        content: "De|";
+    }
+
+    4.92% {
+        content: "Dev|";
+    }
+
+    6.56% {
+        content: "Deve|";
+    }
+
+    8.2% {
+        content: "Devel|";
+    }
+
+    9.84% {
+        content: "Develo|";
+    }
+
+    11.48% {
+        content: "Develop|";
+    }
+
+    13.12% {
+        content: "Develope|";
+    }
+
+    14.76% {
+        content: "Developer|";
+    }
+
+    16.4% {
+        content: "Develope|";
+    }
+
+    18.04% {
+        content: "Develop|";
+    }
+
+    19.68% {
+        content: "Develo|";
+    }
+
+    21.32% {
+        content: "Devel|";
+    }
+
+    22.96% {
+        content: "Deve|";
+    }
+
+    24.6% {
+        content: "Dev|";
+    }
+
+    26.24% {
+        content: "De|";
+    }
+
+    27.88% {
+        content: "D|";
+    }
+
+    29.52% {
+        content: "|";
+    }
+
+    31.16% {
+        content: "D|";
+    }
+
+    32.8% {
+        content: "De|";
+    }
+
+    34.44% {
+        content: "Des|";
+    }
+
+    36.08% {
+        content: "Desi|";
+    }
+
+    37.72% {
+        content: "Desig|";
+    }
+
+    39.36% {
+        content: "Design|";
+    }
+
+    41% {
+        content: "Designe|";
+    }
+
+    42.64% {
+        content: "Designer|";
+    }
+
+    44.28% {
+        content: "Designe|";
+    }
+
+    45.92% {
+        content: "Design|";
+    }
+
+    47.56% {
+        content: "Desig|";
+    }
+
+    49.2% {
+        content: "Desi|";
+    }
+
+    50.84% {
+        content: "Des|";
+    }
+
+    52.48% {
+        content: "De|";
+    }
+
+    54.12% {
+        content: "D|";
+    }
+
+    55.76% {
+        content: "|";
+    }
+
+    57.4% {
+        content: "L|";
+    }
+
+    59.04% {
+        content: "La|";
+    }
+
+    60.68% {
+        content: "Lar|";
+    }
+
+    62.32% {
+        content: "Larr|";
+    }
+
+    63.96% {
+        content: "Larry|";
+    }
+
+    65.6% {
+        content: "Larry |";
+    }
+
+    67.24% {
+        content: "Larry D|";
+    }
+
+    68.88% {
+        content: "Larry Da|";
+    }
+
+    70.52% {
+        content: "Larry Dan|";
+    }
+
+    72.16% {
+        content: "Larry Dani|";
+    }
+
+    73.8% {
+        content: "Larry Danie|";
+    }
+
+    75.44% {
+        content: "Larry Daniel|";
+    }
+
+    77.08% {
+        content: "Larry Daniels|";
+    }
+
+    78.72% {
+        content: "Larry Daniel|";
+    }
+
+    80.36% {
+        content: "Larry Danie|";
+    }
+
+    82% {
+        content: "Larry Dani|";
+    }
+
+    83.64% {
+        content: "Larry Dan|";
+    }
+
+    85.28% {
+        content: "Larry Da|";
+    }
+
+    86.92% {
+        content: "Larry D|";
+    }
+
+    88.56% {
+        content: "Larry |";
+    }
+
+    90.2% {
+        content: "Larry|";
+    }
+
+    91.84% {
+        content: "Larr|";
+    }
+
+    93.48% {
+        content: "Lar|";
+    }
+
+    95.12% {
+        content: "La|";
+    }
+
+    96.76% {
+        content: "L|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+header.home div.container div.content div.social-media {
+    margin-top: 30px;
+}
+
+header.home div.container div.content div.social-media div.social-icon {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-inline: 2px;
+}
+
+/* --------------------------------------------------------------------- */
+/* About section */
+
+section.about {
+    padding-block: 100px 70px;
+}
+
+section.about div.container div.about-img {
+    margin-bottom: 30px;
+    padding: 0 0 0 30px;
+}
+
+section.about div.container div.about-img::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    left: 0;
+    bottom: -30px;
+    z-index: -1;
+}
+
+section.about div.container div.about-content {
+    padding-top: 30px;
+}
+
+section.about div.container div.content {
+    margin-bottom: 30px;
+}
+
+section.about div.container div.content h3 {
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+section.about div.container div.content span {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+section.about div.container div.content p {
+    font-size: 15px;
+    color: var(--secondary--color);
+    line-height: 1.6;
+    margin-block: 20px 0;
+}
+
+section.about div.container div.skill {
+    margin-top: 30px;
+}
+
+section.about div.container div.skill div.progress {
+    margin-bottom: 30px;
+    height: 23px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    background-color: #f7f7f7;
+    --bs-progress-bar-bg: #1c1c1c;
+}
+
+section.about div.container div.skill div.progress div.progress-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+section.about div.container div.skill div.progress div.progress-content h6 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+section.about div.container div.skill div.progress div.progress-content span {
+    font-size: 13px;
+}
+
+section.about div.container div.button a {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+    color: var(--tertiatry-color)
+}
+
+section.about div.container div.button a.btn1 {
+    background-color: var(--tertiatry-color);
+    color: #eee;
+}
+
+section.about div.container div.button a.btn1:hover {
+    background-color: transparent;
+    color: var(--tertiatry-color);
+}
+
+section.about div.container div.button a.btn2:hover {
+    background-color: var(--tertiatry-color);
+    color: #eee;
+}
+
+/* --------------------------------------------------------------------- */
+/* Services section */
+
+section.service {
+    background-color: #f7f7f7;
+}
+
+section.service div.container header.service-header {
+    margin-bottom: 80px;
+}
+
+section.service div.container div.item {
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+section.service div.container div.item div.item-icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-icon);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+section.service div.container div.item:hover div.item-icon {
+    background-color: var(--tertiatry-color);
+    color: #fff;
+}
+
+section.service div.container div.item h6 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+section.service div.container div.item p {
+    font-size: 14px;
+    color: var(--secondary--color);
+}
+
+/* --------------------------------------------------------------------- */
+/* Work section */
+
+section.work div.container div.item {
+    margin-bottom: 30px;
+}
+
+section.work div.container header.work-header {
+    margin-bottom: 80px;
+}
+
+section.work div.container div.item div.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+section.work div.container div.item:hover div.overlay {
+    opacity: 1;
+    gap: 0;
+}
+
+section.work div.container div.item div.overlay h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section.work div.container div.item div.overlay div.icon a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+section.work div.container div.item div.overlay div.icon a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section.work div.container ul.nav {
+    margin-bottom: 50px;
+}
+
+.nav-link {
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: #222;
+}
+
+.nav-link::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--tertiatry-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-pills .nav-link.active {
+    color: #222;
+    background-color: transparent;
+}
+
+.nav-pills .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.btn-close {
+    right: 0;
+    top: -35px;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+    opacity: 0;
+}
+
+/* --------------------------------------------------------------------- */
+/* Client section */
+
+section.slider {
+    padding-block: 100px;
+    background-color: #f7f7f7;
+}
+
+section.slider div.container header.slider-header {
+    margin-bottom: 80px;
+}
+
+section.slider div.container div.slider-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+section.slider div.container p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--secondary--color);
+}
+
+section.slider div.container h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+
+section.slider div.container p.text {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+section.slider div.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px 7px;
+}
+
+section.slider div.carousel-indicators {
+    margin-top: 10px;
+}
+
+section.slider div.carousel-indicators .active {
+    background-color: #869791;
+}
+
+section.slider div.carousel-indicators button {
+    opacity: 1;
+    background-color: #d6d6d6;
+}
+
+/* --------------------------------------------------------------------- */
+/* Counter section */
+
+section.counter {
+    padding-block: 100px 70px;
+}
+
+section.counter div.container div.item div.item-content div.item-icon {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+section.counter div.container div.item div.item-content h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+section.counter div.container div.item div.item-content p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--secondary--color);
+}
+
+/* --------------------------------------------------------------------- */
+/* Team section */
+
+section.team {
+    padding-block: 100px;
+    background-color: #f7f7f7;
+}
+
+section.team div.container header.team-header {
+    margin-bottom: 80px;
+}
+
+section.team div.container div.items {
+    padding-top: 3%;
+}
+
+section.team div.container div.item {
+    background-color: rgba(52, 52, 52, .8);
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+section.team div.container div.item div.item-content {
+    padding: 25px;
+    text-align: center;
+}
+
+section.team div.container div.item div.item-content h4 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+section.team div.container div.item div.item-content h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.team div.container div.item div.item-img img {
+    transition: all 0.5s ease;
+}
+
+section.team div.container div.item:hover div.item-img img {
+    transform: scale(1.2);
+}
+
+section.team div.container div.item div.item-img div.overlay {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+section.team div.container div.item:hover div.item-img div.overlay {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+section.team div.container div.item div.overlay div.icon a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    transition: all 0.5s;
+    margin-inline: 10px;
+    text-align: center;
+}
+
+section.team div.container div.item div.overlay div.icon a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* --------------------------------------------------------------------- */
+/* Contact section */
+
+section.contact {
+    padding-block: 100px;
+}
+
+section.contact div.container header.contact-header {
+    margin-bottom: 80px;
+}
+
+section.contact div.container div.info {
+    margin-bottom: 50px;
+}
+
+section.contact div.container div.info div.item {
+    margin-bottom: 30px;
+}
+
+section.contact div.container div.item div.item-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-icon);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+section.contact div.container div.item:hover div.item-icon {
+    background-color: var(--tertiatry-color);
+    color: #fff;
+}
+
+section.contact div.container div.item h6 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section.contact div.container div.item p {
+    font-size: 15px;
+    color: var(--secondary--color);
+    line-height: 1.6;
+}
+
+section.contact div.container form div.form-info div.form-group {
+    margin-bottom: 15px;
+}
+
+section.contact div.container form div.form-info div.form-group input,
+section.contact div.container form div.form-info div.form-group textarea {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+section.contact div.container form div.form-info input.button {
+    padding: 10px 40px;
+    background-color: var(--tertiatry-color);
+    color: #eee;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+section.contact div.container form div.form-info input.button:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+/* --------------------------------------------------------------------- */
+/* Footer section */
+
+footer {
+    background-color: #1c1c1c;
+    padding-block: 30px;
+    font-size: 14px;
+    color: var(--secondary--color);
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* Home section */
+    header.home div.container div.content h1 {
+        font-size: 44px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Navbar section */
+    ul.navbar-nav a.nav-link::before {
+        height: 2px;
+    }
+
+    /* About section */
+    section.about div.container div.about-content {
+        padding-top: 0;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* Home section */
+    header.home div.container div.content h1 {
+        font-size: 60px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
