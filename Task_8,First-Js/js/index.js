@@ -441,8 +441,15 @@ switch(!isNaN(num1) && !isNaN(num2)) {
                 window.alert(result);
                 break;
             case "/":
-                result = num1 / num2;
-                window.alert(result);
+                switch(num2 == 0) {
+                    case true:
+                        window.alert("Cannot divide by zero");
+                        break;
+                    case false:
+                        result = num1 / num2;
+                        window.alert(result);
+                        break;
+                }
                 break;
             case "**":
                 result = num1 ** num2;
