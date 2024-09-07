@@ -15,7 +15,7 @@ else {
 /*
 var num = +window.prompt("enter a number");
 if(!isNaN(num)) {
-    if(num % 3 == 0 || num % 4 == 0) {
+    if(num % 3 == 0 && num % 4 == 0) {
         window.alert("Yes");
     }
     else {
