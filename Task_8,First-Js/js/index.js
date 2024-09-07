@@ -69,15 +69,21 @@ var num1 = +window.prompt("enter a number 1");
 var num2 = +window.prompt("enter a number 2");
 var num3 = +window.prompt("enter a number 3");
 if(!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
-    if(num1 > num2 && num1 > num3) {
-        window.alert(num1);
+    var max = num1;
+    if(num2 > max) {
+        max = num2;
     }
-    else if(num2 > num3) {
-        window.alert(num2);
+    if(num3 > max) {
+        max = num3;
     }
-    else {
-        window.alert(num3);
+    var min = num1;
+    if(num2 < min) {
+        min = num2;
     }
+    if(num3 < min) {
+        min = num3;
+    }
+    window.alert("max element = " + max + "\nmin element = " + min);
 }
 else {
     window.alert("This is not a number");
@@ -105,7 +111,8 @@ else {
 
 /*
 var char = window.prompt("Enter a character");
-if(Number(char)) {
+console.log(typeof char);
+if(!isNaN(char)) {
     window.alert("This is a number, Enter a character");
 }
 else {
