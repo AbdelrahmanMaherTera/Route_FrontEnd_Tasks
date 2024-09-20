@@ -43,7 +43,7 @@ main .bookmark .body {
 
 main .bookmark .body h2 {
     font-family: "Righteous", sans-serif;
-    font-size: 1.5625rem;
+    /* font-size: 1.5625rem; */
     background-image: linear-gradient(to Right , #3ca55c , #b5ac49);
     -webkit-background-clip: text;
     color: transparent;
