@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <main class="py-5">
+        <section class="bookmark container">
+            <header class="d-flex justify-content-center">
+                <h1 class="py-2 text-center position-relative">Bookmarker</h1>
+            </header>
+
+            <div class="body mt-5 py-4 px-3 d-flex flex-column align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name-input w-100">
+                    <label for="bookmarkName" class="pb-2 fw-semibold d-flex align-items-center">
+                        <div class="icon me-2">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        Site Name
+                    </label>
+                    <input type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
+                </div>
+
+                <div class="site-url-input w-100">
+                    <label for="bookmarkUrl" class="pb-2 fw-semibold d-flex align-items-center">
+                        <div class="icon me-2">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        Site URL
+                    </label>
+                    <input type="url" id="bookmarkUrl" class="form-control" placeholder="Website URL">
+                </div>
+
+                <button class="btn px-5 text-light submit-btn">Submit</button>
+            </div>
+
+            <div class="my-table mt-4 mb-3 text-center bg-light">
+                <div class="container">
+                    <div class="row row-cols-4">
+                        <div class="col py-2 fw-semibold">
+                            <p>Index</p>
+                        </div>
+                        <div class="col py-2 fw-semibold">
+                            <p>Website Name</p>
+                        </div>
+                        <div class="col py-2 fw-semibold">
+                            <p>Visit</p>
+                        </div>
+                        <div class="col py-2 fw-semibold">
+                            <p>Delete</p>
+                        </div>
+
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col py-2 d-flex justify-content-center align-items-center">
+                            <p>1</p>
+                        </div>
+                        <div class="col py-2 d-flex justify-content-center align-items-center">
+                            <p>youtube</p>
+                        </div>
+                        <div class="col py-2 d-flex justify-content-center align-items-center">
+                            <button class="btn btn-success d-flex flex-column flex-sm-row align-items-center gap-2 d-block">
+                                <i class="fa-solid fa-eye"></i>
+                                Visit
+                            </button>
+                        </div>
+                        <div class="col py-2 d-flex justify-content-center align-items-center">
+                            <button class="btn btn-danger d-flex flex-column flex-sm-row align-items-center gap-2">
+                                <i class="fa-solid fa-trash-can"></i>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
