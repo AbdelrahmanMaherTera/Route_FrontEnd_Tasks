@@ -48,7 +48,7 @@
                     <input type="url" id="bookmarkUrl" class="form-control" placeholder="Website URL">
                 </div>
 
-                <button class="btn px-5 text-light submit-btn">Submit</button>
+                <button onclick="addBookmark()" class="btn px-5 text-light submit-btn">Submit</button>
             </div>
 
             <div class="my-table mt-4 mb-3 text-center bg-light">
@@ -68,25 +68,25 @@
                         </div>
 
                     </div>
-                    <div class="row row-cols-4">
-                        <div class="col py-2 d-flex justify-content-center align-items-center">
+                    <div id="allBookmarksTable" class="row row-cols-4">
+                        <!-- <div class="col py-2 d-flex justify-content-center align-items-center">
                             <p>1</p>
                         </div>
                         <div class="col py-2 d-flex justify-content-center align-items-center">
                             <p>youtube</p>
                         </div>
                         <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <button class="btn btn-success d-flex flex-column flex-sm-row align-items-center gap-2 d-block">
+                            <button class="visit-btn btn text-white d-flex flex-column flex-sm-row align-items-center gap-2 d-block">
                                 <i class="fa-solid fa-eye"></i>
                                 Visit
                             </button>
                         </div>
                         <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <button class="btn btn-danger d-flex flex-column flex-sm-row align-items-center gap-2">
+                            <button class="delete-btn btn btn-danger d-flex flex-column flex-sm-row align-items-center gap-2">
                                 <i class="fa-solid fa-trash-can"></i>
                                 Delete
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

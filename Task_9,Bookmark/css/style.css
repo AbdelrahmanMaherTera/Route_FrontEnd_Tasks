@@ -75,6 +75,16 @@ main .bookmark .my-table p {
     overflow: auto;
 }
 
+main .bookmark .my-table button.visit-btn {
+    background-color: #9eb23b;
+    border-color: #9eb23b;
+}
+
+main .bookmark .my-table button.visit-btn:hover {
+    background-color: #8a9e23;
+    border-color: #6e8018;
+}
+
 
 
 
