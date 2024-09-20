@@ -43,7 +43,7 @@ main .bookmark .body {
 
 main .bookmark .body h2 {
     font-family: "Righteous", sans-serif;
-    /* font-size: 1.5625rem; */
+    font-size: 1.25rem;
     background-image: linear-gradient(to Right , #3ca55c , #b5ac49);
     -webkit-background-clip: text;
     color: transparent;
@@ -73,4 +73,18 @@ main .bookmark .my-table .col {
 main .bookmark .my-table p {
     margin: 0;
     overflow: auto;
+}
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 500px) {
+
+    main .bookmark .body h2 {
+        font-size: 1.5625rem;
+    }
 }
