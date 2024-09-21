@@ -107,7 +107,10 @@ main .bookmark .my-table button.visit-btn:hover {
     font-size: 1.125rem;
 }
 
-.modal .modal-content .modal-body p i {
+.modal .modal-content .modal-body .icon {
+    width: 20px;
+    height: 20px;
+    font-size: 1.125rem;
     color: #bb4120;
 }
 
