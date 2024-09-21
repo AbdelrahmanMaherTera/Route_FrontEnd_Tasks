@@ -30,7 +30,7 @@ main .bookmark header h1:hover::before {
     height: 50%;
 }
 
-main .bookmark .body .form-control:focus {
+.form-control:focus {
     border-color: #d99c39;
     box-shadow: 0 0 0 0.25rem #fec26055;
 }
@@ -83,6 +83,32 @@ main .bookmark .my-table button.visit-btn {
 main .bookmark .my-table button.visit-btn:hover {
     background-color: #8a9e23;
     border-color: #6e8018;
+}
+
+.modal .modal-content .modal-header .circles div.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.modal .modal-content .modal-header .circles div.circle.red {
+    background-color: #f15f5d;
+}
+
+.modal .modal-content .modal-header .circles div.circle.yellow {
+    background-color: #febe2e;
+}
+
+.modal .modal-content .modal-header .circles div.circle.green {
+    background-color: #4db748;
+}
+
+.modal .modal-content .modal-body p {
+    font-size: 1.125rem;
+}
+
+.modal .modal-content .modal-body p i {
+    color: #bb4120;
 }
 
 

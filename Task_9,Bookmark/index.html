@@ -35,7 +35,7 @@
                         </div>
                         Site Name
                     </label>
-                    <input type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
+                    <input oninput="isValidBookmarkField(bookmarkNameRegex , this)" type="text" id="bookmarkName" class="form-control" placeholder="Bookmark Name">
                 </div>
 
                 <div class="site-url-input w-100">
@@ -45,7 +45,7 @@
                         </div>
                         Site URL
                     </label>
-                    <input type="url" id="bookmarkUrl" class="form-control" placeholder="Website URL">
+                    <input oninput="isValidBookmarkField(bookmarkUrlRegex , this)" type="url" id="bookmarkUrl" class="form-control" placeholder="Website URL">
                 </div>
 
                 <button onclick="addBookmark()" class="btn px-5 text-light submit-btn">Submit</button>
@@ -69,28 +69,37 @@
 
                     </div>
                     <div id="allBookmarksTable" class="row row-cols-4">
-                        <!-- <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <p>1</p>
-                        </div>
-                        <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <p>youtube</p>
-                        </div>
-                        <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <button class="visit-btn btn text-white d-flex flex-column flex-sm-row align-items-center gap-2 d-block">
-                                <i class="fa-solid fa-eye"></i>
-                                Visit
-                            </button>
-                        </div>
-                        <div class="col py-2 d-flex justify-content-center align-items-center">
-                            <button class="delete-btn btn btn-danger d-flex flex-column flex-sm-row align-items-center gap-2">
-                                <i class="fa-solid fa-trash-can"></i>
-                                Delete
-                            </button>
-                        </div> -->
+                        
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog m-0 translate-middle start-50 top-50">
+                <div class="modal-content p-4">
+                    <div class="modal-header border-0 p-0 py-3 mb-4 d-flex justify-content-between align-items-center">
+                        <div class="circles d-flex gap-2">
+                            <div class="circle red"></div>
+                            <div class="circle yellow"></div>
+                            <div class="circle green"></div>
+                        </div>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <p class="fw-semibold fs-5">Site Name or Url is not valid, Please follow the rules below :</p>
+                        <p class="mb-2">
+                            <i class="fa-regular fa-circle-right p-2"></i>
+                            Site name must contain at least 3 characters
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-regular fa-circle-right p-2"></i>
+                            Site URL must be a valid one
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

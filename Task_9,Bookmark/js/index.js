@@ -1,6 +1,9 @@
 var bookmarkNameInput = document.getElementById("bookmarkName");
 var bookmarkUrlInput = document.getElementById("bookmarkUrl");
 var allBookmarksTable = document.getElementById("allBookmarksTable");
+var popUpAlert = document.getElementById("popUpAlert");
+var bookmarkNameRegex = /^[a-zA-z][a-zA-Z0-9]{2,}$/;
+var bookmarkUrlRegex = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&=]*)/;
 
 var bookmarksList = [];
 
@@ -10,19 +13,27 @@ if(localStorage.getItem("bookmarksList") != null) {
 }
 
 function addBookmark() {
-    var bookmark = {
-        bookmarkName: bookmarkNameInput.value,
-        bookmarkUrl: bookmarkUrlInput.value
-    };
-    bookmarksList.push(bookmark);
-    displayBookmarks();
-    localStorage.setItem("bookmarksList" , JSON.stringify(bookmarksList));
-    resetAllInputs();
+    if(isValidBookmarkField(bookmarkNameRegex , bookmarkNameInput) & isValidBookmarkField(bookmarkUrlRegex , bookmarkUrlInput)) {
+        var bookmark = {
+            bookmarkName: bookmarkNameInput.value,
+            bookmarkUrl: bookmarkUrlInput.value
+        };
+        bookmarksList.push(bookmark);
+        displayBookmarks();
+        localStorage.setItem("bookmarksList" , JSON.stringify(bookmarksList));
+        resetAllInputs();
+    }
+    else {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+    }
 }
 
 function resetAllInputs() {
     bookmarkNameInput.value = null;
     bookmarkUrlInput.value = null;
+    bookmarkNameInput.classList.remove("is-valid" , "is-invalid");
+    bookmarkUrlInput.classList.remove("is-valid" , "is-invalid");
 }
 
 function displayBookmarks() {
@@ -60,4 +71,17 @@ function deleteBookmark(deletedIndex) {
 function visitUrl(urlIndex) {
     var siteUrl = bookmarksList[urlIndex].bookmarkUrl;
     window.open(siteUrl , "_blank");
+}
+
+function isValidBookmarkField(regex , input) {
+    if(regex.test(input.value)) {
+        input.classList.add("is-valid");
+        input.classList.remove("is-invalid");
+        return true;
+    }
+    else {
+        input.classList.add("is-invalid");
+        input.classList.remove("is-valid");
+        return false;
+    }
 }
