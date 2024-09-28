@@ -70,7 +70,17 @@ function deleteBookmark(deletedIndex) {
 
 function visitUrl(urlIndex) {
     var siteUrl = bookmarksList[urlIndex].bookmarkUrl;
-    window.open(siteUrl , "_blank");
+    if(siteUrl.startsWith("http://")) {
+        siteUrl = `${siteUrl.replace("http" , "https")}`
+        window.open(siteUrl , "_blank");
+    }
+    else if(!siteUrl.startsWith("https://")) {
+        siteUrl = `https://${bookmarksList[urlIndex].bookmarkUrl}`
+        window.open(siteUrl , "_blank");
+    }
+    else {
+        window.open(siteUrl , "_blank");
+    }
 }
 
 function isValidBookmarkField(regex , input) {
