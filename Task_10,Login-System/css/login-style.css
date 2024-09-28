@@ -1,0 +1,33 @@
+::-webkit-input-placeholder {
+    color: #b5b5b5 !important;
+}
+
+body {
+    background-color: #24353f;
+    font-family: sans-serif;
+}
+
+.login-body {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.login-body h1 {
+    color: #17a2b8;
+    font-size: 2.5rem;
+}
+
+
+.login-body button {
+    background-color: transparent;
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+
+.login-body button:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.login-body button:focus {
+    box-shadow: 0 0 0 .2rem rgba(23,162,184,.5);
+}

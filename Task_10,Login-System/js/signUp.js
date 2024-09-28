@@ -15,7 +15,7 @@ if(localStorage.getItem("usersInfoList") != null) {
 }
 
 signUpBtn.addEventListener("click" , function() {
-    if(isValidInputField(userNameRegex , nameInput , nameError) & isValidInputField(emailRegex , emailInput , emailError) & isValidInputField(passwordRegex , passwordInput , passwordError)) {
+    if(isValidInputField(userNameRegex , nameInput) & isValidInputField(emailRegex , emailInput) & isValidInputField(passwordRegex , passwordInput)) {
         checkUser();
     }
 })

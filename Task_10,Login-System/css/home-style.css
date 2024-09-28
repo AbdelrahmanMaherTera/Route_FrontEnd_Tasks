@@ -1,0 +1,28 @@
+/* -5px 2px 54px -9px rgba(0, 0, 0, 1) */
+
+body {
+    background-color: #24353f;
+    font-family: sans-serif;
+}
+
+nav {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+nav .logout button {
+    border-color: #dc3545;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+nav .logout button:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+main .content {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+main .content h1 {
+    color: #17a2b8;
+}
