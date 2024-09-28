@@ -2,7 +2,6 @@ var emailInput = document.getElementById("email");
 var passwordInput = document.getElementById("password");
 var loginBtn = document.getElementById("loginBtn");
 var programState = document.getElementById("programState");
-// var myForm = document.querySelector("form");
 
 var usersInfoList = JSON.parse(localStorage.getItem("usersInfoList"));
 
