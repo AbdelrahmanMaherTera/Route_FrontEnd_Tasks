@@ -1,0 +1,39 @@
+/* -5px 2px 54px -9px rgba(0, 0, 0, 1)
+    #17a2b8
+    #a0999c
+    0 0 0 .2rem rgba(23,162,184,.5)
+*/
+
+::-webkit-input-placeholder {
+    color: #b5b5b5 !important;
+}
+
+body {
+    background-color: #24353f;
+    font-family: sans-serif;
+}
+
+.sign-up-body {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.sign-up-body h1 {
+    color: #17a2b8;
+    font-size: 2.5rem;
+}
+
+
+.sign-up-body button {
+    background-color: transparent;
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+
+.sign-up-body button:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.sign-up-body button:focus {
+    box-shadow: 0 0 0 .2rem rgba(23,162,184,.5);
+}
