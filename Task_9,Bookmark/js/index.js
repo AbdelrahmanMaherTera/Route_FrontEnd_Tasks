@@ -71,11 +71,15 @@ function deleteBookmark(deletedIndex) {
 function visitUrl(urlIndex) {
     var siteUrl = bookmarksList[urlIndex].bookmarkUrl;
     if(siteUrl.startsWith("http://")) {
-        siteUrl = `${siteUrl.replace("http" , "https")}`
+        siteUrl = `${siteUrl.replace("http" , "https")}`;
         window.open(siteUrl , "_blank");
     }
     else if(!siteUrl.startsWith("https://")) {
-        siteUrl = `https://${bookmarksList[urlIndex].bookmarkUrl}`
+        siteUrl = `https://${bookmarksList[urlIndex].bookmarkUrl}`;
+        window.open(siteUrl , "_blank");
+    }
+    else if(!siteUrl.startsWith("https://www.")) {
+        siteUrl = `https://www.${bookmarksList[urlIndex].bookmarkUrl}`;
         window.open(siteUrl , "_blank");
     }
     else {
