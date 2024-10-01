@@ -72,18 +72,18 @@ function visitUrl(urlIndex) {
     var siteUrl = bookmarksList[urlIndex].bookmarkUrl;
     if(siteUrl.startsWith("http://")) {
         siteUrl = `${siteUrl.replace("http" , "https")}`;
-        window.open(siteUrl , "_blank");
+        window.open(siteUrl.trim() , "_blank");
     }
     else if(!siteUrl.startsWith("https://")) {
-        siteUrl = `https://${bookmarksList[urlIndex].bookmarkUrl}`;
+        siteUrl = `https://${siteUrl.trim()}`;
         window.open(siteUrl , "_blank");
     }
     else if(!siteUrl.startsWith("https://www.")) {
-        siteUrl = `https://www.${bookmarksList[urlIndex].bookmarkUrl}`;
+        siteUrl = `https://www.${siteUrl.trim()}`;
         window.open(siteUrl , "_blank");
     }
     else {
-        window.open(siteUrl , "_blank");
+        window.open(siteUrl.trim() , "_blank");
     }
 }
 
