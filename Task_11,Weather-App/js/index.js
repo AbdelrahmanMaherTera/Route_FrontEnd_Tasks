@@ -9,7 +9,7 @@ let todayLocation = document.getElementById("todayLocation");
 let todayTemp = document.getElementById("todayTemp");
 let todayConditionImage = document.getElementById("todayConditionImage");
 let todayConditionText = document.getElementById("todayConditionText");
-let clouds = document.getElementById("clouds");
+let humidity = document.getElementById("humidity");
 let windSpeed = document.getElementById("windSpeed");
 let windDirection = document.getElementById("windDirection");
 
@@ -51,7 +51,7 @@ function displayTodayData(data) {
     todayTemp.innerHTML = `${data.current.temp_c}<sup>o</sup>c`;
     todayConditionImage.setAttribute("src" , data.current.condition.icon);
     todayConditionText.innerHTML = data.current.condition.text;
-    clouds.innerHTML = `${data.current.cloud}%`;
+    humidity.innerHTML = `${data.current.humidity}%`;
     windSpeed.innerHTML = `${data.current.wind_kph}km/h`;
     windDirection.innerHTML = data.current.wind_dir;
 }
