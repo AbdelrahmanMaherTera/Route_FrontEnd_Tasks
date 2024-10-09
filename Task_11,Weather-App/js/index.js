@@ -27,6 +27,21 @@ async function getWeatherData(cityName) {
     return weatherData;
 }
 
+// fetch api ip address
+async function getIpAddress() {
+    let ipResponse = await fetch("https://api.ipify.org?format=json");
+    let ipData = await ipResponse.json();
+    return ipData;
+}
+
+// fetch api ip address detals
+async function getCityName() {
+    let ip = await getIpAddress()
+    let ipResponse = await fetch(`http://ip-api.com/json/${ip.ip}`);
+    let ipData = await ipResponse.json();
+    return ipData;
+}
+
 // display today data
 function displayTodayData(data) {
     let date = new Date(data.location.localtime);
@@ -54,7 +69,7 @@ function displayNextDaysData(data) {
 }
 
 // startup app
-async function startApp(cityName="cairo") {
+async function startApp(cityName) {
     let weatherData = await getWeatherData(cityName);
     if(!weatherData.error) {
         displayTodayData(weatherData);
@@ -62,7 +77,12 @@ async function startApp(cityName="cairo") {
     }
 }
 
-startApp()
+async function findCity() {
+     let location = await getCityName();
+    startApp(location.city);
+}
+
+findCity();
 
 searchInput.addEventListener("input" , function() {
     startApp(searchInput.value);
