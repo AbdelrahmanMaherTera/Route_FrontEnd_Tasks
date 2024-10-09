@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #1e202b;
     color: #fff;
 }
@@ -108,8 +108,9 @@ section.forecast-table .forecast-container {
 }
 
 section.forecast-table .forecast-container .col .forecast {
-    background-color: #323544; /* #323544 */
+    background-color: #323544;
     height: 100%;
+    border-radius: 10px;
 }
 
 section.forecast-table .forecast-container .col .forecast.meddel {
@@ -230,7 +231,7 @@ footer button {
     right: 5px;
     top: 5px;
     bottom: 5px;
-    padding: 0 40px;
+    padding: 0 20px;
     background-color: #009ad8;
     color: #fff;
     border: none;
@@ -326,6 +327,10 @@ footer p {
         border-color: #009ad8;
         color: #009ad8 !important;
         font-weight: 400;
+    }
+
+    section.forecast-table .forecast-container .col .forecast {
+        border-radius: 0;
     }
 }
 
