@@ -1,4 +1,4 @@
-// api ==> http://api.weatherapi.com/v1/forecast.json?key=8652347b5d9d4efaae105633240910&q=cairo&days=3
+// api ==> https://api.weatherapi.com/v1/forecast.json?key=8652347b5d9d4efaae105633240910&q=cairo&days=3
 
 // search input & submit btn
 let searchInput = document.getElementById("searchInput");
@@ -24,7 +24,7 @@ let nextDayConditionText = document.querySelectorAll(".nextDayConditionText");
 
 // fetch api data
 async function getWeatherData(cityName) {
-    let weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8652347b5d9d4efaae105633240910&q=${cityName}&days=3`);
+    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8652347b5d9d4efaae105633240910&q=${cityName}&days=3`);
     let weatherData = await weatherResponse.json();
     return weatherData;
 }
