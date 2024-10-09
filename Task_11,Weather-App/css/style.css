@@ -23,7 +23,6 @@ nav .navbar-brand .brand-name p {
 nav .navbar-collapse ul {
     display: flex;
     align-items: center;
-    font-weight: 300;
 
     background-color: #262936;
     border-radius: 10px;
@@ -320,13 +319,11 @@ footer p {
     nav .navbar-collapse ul li.nav-item a.nav-link.active {
         border-color: #009ad8;
         color: #009ad8 !important;
-        font-weight: 400;
     }
     
     nav .navbar-collapse ul li.nav-item a.nav-link:hover {
         border-color: #009ad8;
         color: #009ad8 !important;
-        font-weight: 400;
     }
 
     section.forecast-table .forecast-container .col .forecast {

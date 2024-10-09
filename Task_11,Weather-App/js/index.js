@@ -1,5 +1,3 @@
-// api ==> https://api.weatherapi.com/v1/forecast.json?key=8652347b5d9d4efaae105633240910&q=cairo&days=3
-
 // search input & submit btn
 let searchInput = document.getElementById("searchInput");
 let submitBtn = document.getElementById("submitBtn");
