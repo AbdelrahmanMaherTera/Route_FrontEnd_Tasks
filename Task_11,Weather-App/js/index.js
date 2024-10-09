@@ -48,7 +48,7 @@ function displayTodayData(data) {
     todayDayName.innerHTML = date.toLocaleDateString("en-US" , {weekday:"long"});
     todayMonthName.innerHTML = `${date.getDate()} ${date.toLocaleDateString("en-US" , {month:"long"})}`;
     todayLocation.innerHTML = data.location.name;
-    todayTemp.innerHTML = data.current.temp_c;
+    todayTemp.innerHTML = `${data.current.temp_c}<sup>o</sup>c`;
     todayConditionImage.setAttribute("src" , data.current.condition.icon);
     todayConditionText.innerHTML = data.current.condition.text;
     clouds.innerHTML = `${data.current.cloud}%`;
