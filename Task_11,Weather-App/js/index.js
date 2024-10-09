@@ -69,3 +69,7 @@ startApp()
 searchInput.addEventListener("input" , function() {
     startApp(searchInput.value);
 })
+
+submitBtn.addEventListener("click" , function(){
+    startApp(searchInput.value);
+})
