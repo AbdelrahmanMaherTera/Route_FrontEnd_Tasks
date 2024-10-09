@@ -189,6 +189,11 @@ section.forecast-table .forecast-container .col .forecast.today .forecast-conten
     gap: 5px;
 }
 
+section.forecast-table .forecast-container .col .forecast.today .forecast-content .info span i {
+    color: #bfc1c89f;
+    font-size: 18px;
+}
+
 section.forecast-table p , span {
     color: #bfc1c8;
     font-size: 0.875rem;
