@@ -29,7 +29,7 @@ async function getWeatherData(cityName) {
 
 // fetch api ip address
 async function getIpAddress() {
-    let ipResponse = await fetch("https://ipapi.co/json/");
+    let ipResponse = await fetch("https://freeipapi.com/api/json/");
     let ipData = await ipResponse.json();
     return ipData;
 }
@@ -71,7 +71,7 @@ async function startApp(cityName) {
 
 async function findCity() {
      let location = await getIpAddress();
-    startApp(location.city);
+    startApp(location.cityName);
 }
 
 findCity();
