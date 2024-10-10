@@ -37,7 +37,7 @@ async function getIpAddress() {
 // fetch api ip address detals
 async function getCityName() {
     let ip = await getIpAddress()
-    let ipResponse = await fetch(`https://ipapi.co/${ip.ip}/json/`);
+    let ipResponse = await fetch(`https://api.ipfind.com/?ip=${ip.ip}&auth=2d617f27-2305-42d6-ab5f-bc67a1db61eb`);
     let ipData = await ipResponse.json();
     return ipData;
 }
