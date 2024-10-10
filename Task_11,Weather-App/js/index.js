@@ -70,7 +70,7 @@ async function startApp(cityName) {
 }
 
 async function findCity() {
-     let location = await getIpAddress();
+    let location = await getIpAddress();
     startApp(location.cityName);
 }
 
