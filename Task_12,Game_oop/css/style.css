@@ -24,7 +24,7 @@ section.games .navbar .navbar-brand {
     font-weight: 500;
 }
 
-section.games .navbar .collapse ul.navbar-nav {
+section.games .navbar ul.navbar-nav {
     font-size: 0.75rem;
 }
 
@@ -90,6 +90,7 @@ section.games .navbar .nav-item .nav-link:hover {
     overflow: hidden;
     text-align: center;
     opacity: 50%;
+    font-size: 0.875rem;
 }
 
 .display-games .all-items .col .item .item-footer {
