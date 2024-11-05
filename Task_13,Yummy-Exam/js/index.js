@@ -232,10 +232,10 @@ search.addEventListener('click',
         closeSideNav();
         searchContainer.innerHTML = `<div class="row py-4">
                                 <div class="col-md-6">
-                                    <input onkeyup="searchByName(this.value)" type="text" class="form-control text-white" placeholder="Search By Name">
+                                    <input onkeyup="searchByName(this.value)" type="text" class="form-control" placeholder="Search By Name">
                                 </div>
                                 <div class="col-md-6">
-                                    <input onkeyup="searchByFirstLetter(this.value)" maxlength="1" type="text" class="form-control text-white" placeholder="Search By First Letter">
+                                    <input onkeyup="searchByFirstLetter(this.value)" maxlength="1" type="text" class="form-control" placeholder="Search By First Letter">
                                 </div>
                             </div>`
         rowData.innerHTML = '';
